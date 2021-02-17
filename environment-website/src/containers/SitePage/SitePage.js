@@ -4,8 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from '.././LandingPage/LandingPage';
 import PagePicker from '../../components/PagePicker/PagePicker';
 import FlintPage from '../FlintPage/FlintPage';
-import ChattaPage from '../ChattaPage/ChattaPage';
+import UpperChattaPage from '../UpperChattaPage/UpperChattaPage';
+import LowerChattaPage from '../LowerChattaPage/LowerChattaPage';
 import ApalaPage from '../ApalaPage/ApalaPage';
+import ApalaBayPage from '../ApalaBayPage/ApalaBayPage';
 import Footer from '../../components/Footer/Footer';
 import Auxillary from '../../hoc/Auxillary';
 class SitePage extends Component{
@@ -18,20 +20,26 @@ class SitePage extends Component{
         this.setState({view: page});
     }
     returnActivePage = () =>{
-        if(this.state.view == 'home'){
-            return (<LandingPage/>);
+        if(this.state.view === 'home'){
+            return (<LandingPage changePage = {this.updateActivePage}/>);
         }
-        if(this.state.view == 'flint'){
+        if(this.state.view === 'Flint'){
             return (<FlintPage/>);
         }
-        if(this.state.view == 'chatta'){
-            return (<ChattaPage/>);
+        if(this.state.view === 'Upper Chattahoochee'){
+            return (<UpperChattaPage/>);
         }
-        if(this.state.view == 'apala'){
+        if(this.state.view === 'Lower Chattahoochee'){
+            return (<LowerChattaPage/>);
+        }
+        if(this.state.view === 'Apalachicola'){
             return (<ApalaPage/>);
         }
+        if(this.state.view === 'Apalachicola Bay'){
+            return (<ApalaBayPage/>);
+        }
         else{
-            return (<FlintPage/>);
+            return (<LandingPage/>);
         }
     }
 
