@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Button from './components/Button/Button';
 import LandingPage from '.././LandingPage/LandingPage';
-import PagePicker from '../PagePicker/PagePicker';
+import PagePicker from '../../components/PagePicker/PagePicker';
 import FlintPage from '../FlintPage/FlintPage';
 import ChattaPage from '../ChattaPage/ChattaPage';
+import ApalaPage from '../ApalaPage/ApalaPage';
+import Footer from '../../components/Footer/Footer';
 import Auxillary from '../../hoc/Auxillary';
 class SitePage extends Component{
     state = {
@@ -25,6 +27,9 @@ class SitePage extends Component{
         if(this.state.view == 'chatta'){
             return (<ChattaPage/>);
         }
+        if(this.state.view == 'apala'){
+            return (<ApalaPage/>);
+        }
         else{
             return (<FlintPage/>);
         }
@@ -40,6 +45,7 @@ class SitePage extends Component{
             changePage = {this.updateActivePage}
             />
             {currentPage}
+            <Footer/>
         </Auxillary>
         );
     }
