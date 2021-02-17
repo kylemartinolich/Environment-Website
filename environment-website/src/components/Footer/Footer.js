@@ -2,8 +2,9 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
+import classes from './Footer.module.css';
 const footer = (props) => (
-    <div>
+    <div className={classes.Footer}>
         <h2><strong>Lorem Ipsum</strong></h2>
         <Form className="justify-content-center">
     <Row>
