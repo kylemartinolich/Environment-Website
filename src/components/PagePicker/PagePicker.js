@@ -1,8 +1,9 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
+import classes from './PagePicker.module.css';
 
 const pagePicker = (props) => (
-    <div>
+    <div className={classes.navbar}>
         <Nav
         className="justify-content-center"
         variant="pills"

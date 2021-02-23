@@ -4,3 +4,52 @@
     margin-left:25%;
     margin-bottom:400px;
 }
+.showcase {
+    background: url(../../assets/Rivers/Apalachicola_Bay.png) no-repeat center center/cover;
+    height: 91.7vh;
+}
+
+.showcasecontent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 35px;
+    right: 0;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.showcasecontent .Title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #00ffff;
+}
+.showcasecontent .btn {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+    transition: color 0.5s,  background 0.5s;
+}
+
+.showcasecontent .btn:hover {
+    background: #00ffff;
+    color: #fff;
+}
+
+.btn {
+    color: #00ffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}

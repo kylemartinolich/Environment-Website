@@ -20,16 +20,23 @@ class LandingPage extends Component{
     render(){
         return(
         <div className={classes.LandingPage}>
-            <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button variant="primary">Learn more</Button>
-            </p>
-            </Jumbotron>
+            <header className={classes.showcase}>
+                <div className={classes.showcasecontent}>
+                    <div className={classes.container}>
+                        <h1 className={classes.Title}>Hello, World!</h1>
+                            <p>
+                                This is a simple hero unit, a simple jumbotron-style component for calling
+                                extra attention to featured content or information.
+                            </p>
+                            <br></br>
+                            <p>
+                            <a href="" className={classes.btn}>Learn more</a>
+                            </p>
+                    </div>
+
+                </div>
+
+            </header>
             <h2>Welcome to the Environment Website!</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
