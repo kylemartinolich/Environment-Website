@@ -43,11 +43,11 @@ class LandingButton extends Component{
             }
         }
         return (
-    <div className={classes.wrapper}>
+    
     <div className={classes.list}>
       {items}
     </div>
-    </div>
+    
   )
     }
 }

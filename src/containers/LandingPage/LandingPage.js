@@ -37,6 +37,7 @@ class LandingPage extends Component{
                 </div>
 
             </header>
+            <div className={classes.text}>
             <h2>Welcome to the Environment Website!</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -47,6 +48,7 @@ class LandingPage extends Component{
                 Praesent semper feugiat nibh sed pulvinar. Commodo quis imperdiet massa tincidunt nunc pulvinar. 
                 Donec et odio pellentesque diam volutpat. Mollis nunc sed id semper risus in hendrerit gravida rutrum.
             </p>
+            </div>
             <div className={classes.mapContainer}>
                 <img className={classes.map} alt="Map" src={this.state.image}/>
                 <LandingButton className={classes.items} changeImage={this.changeImageShown} changePage={this.props.changePage}/>
