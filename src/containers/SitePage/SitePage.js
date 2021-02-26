@@ -10,6 +10,7 @@ import ApalaPage from '../ApalaPage/ApalaPage';
 import ApalaBayPage from '../ApalaBayPage/ApalaBayPage';
 import Footer from '../../components/Footer/Footer';
 import Auxillary from '../../hoc/Auxillary';
+import classes from './SitePage.module.css';
 class SitePage extends Component{
     state = {
         view: 'home'
@@ -52,7 +53,9 @@ class SitePage extends Component{
             currentPage = {this.state.view}
             changePage = {this.updateActivePage}
             />
+            <div className={classes.container}>
             {currentPage}
+            </div>
             <Footer/>
         </Auxillary>
         );
