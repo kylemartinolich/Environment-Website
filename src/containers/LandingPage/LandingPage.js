@@ -30,7 +30,8 @@ class LandingPage extends Component{
         return(
         <div className={classes.LandingPage}>
             <header className={classes.showcase}>
-                                         <div class="position-absolute top-0 left-0">
+                <div className={classes.showcasecontent}>
+                     <div class="position-absolute top-0 left-0">
                                 <OverlayTrigger
                                     placement="right"
                                     delay={{ show: 250, hide: 400 }}
@@ -43,7 +44,6 @@ class LandingPage extends Component{
                                                                   
                                 </OverlayTrigger>,
                             </div>
-                <div className={classes.showcasecontent}>
                     <div className={classes.container}>
                         <h1 className={classes.Title}>Hello, World!</h1>
                             <p>
