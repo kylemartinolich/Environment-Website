@@ -8,6 +8,7 @@ import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
+import Row from 'react-bootstrap/Row'
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -32,15 +33,24 @@ class LandingPage extends Component{
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
+                        <Row>
                         <h1 className={classes.Title}>Hello, World!</h1>
+                        </Row>
+                        <Row>
                             <p>
                                 This is a simple hero unit, a simple jumbotron-style component for calling
                                 extra attention to featured content or information.
                             </p>
+                        </Row>
+                        <Row>
                             <br></br>
+                        </Row>
+                        <Row>
                             <p>
                                 <a href="" className={classes.btn}>Learn more</a>
                             </p>
+                        </Row>
+                        <Row>
                             <div class="position-absolute bottom-0 left-0">
                                 <OverlayTrigger
                                     placement="right"
@@ -54,6 +64,7 @@ class LandingPage extends Component{
                                                                   
                                 </OverlayTrigger>,
                             </div>
+                        </Row>
                     </div>
                 </div>
 
