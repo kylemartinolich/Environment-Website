@@ -30,9 +30,7 @@ class LandingPage extends Component{
         return(
         <div className={classes.LandingPage}>
             <header className={classes.showcase}>
-                <div className={classes.showcasecontent}>
-                    <div className={classes.container}>
-                         <div class="position-absolute top-0 left-0">
+                                         <div class="position-absolute top-0 left-0">
                                 <OverlayTrigger
                                     placement="right"
                                     delay={{ show: 250, hide: 400 }}
@@ -45,6 +43,8 @@ class LandingPage extends Component{
                                                                   
                                 </OverlayTrigger>,
                             </div>
+                <div className={classes.showcasecontent}>
+                    <div className={classes.container}>
                         <h1 className={classes.Title}>Hello, World!</h1>
                             <p>
                                 This is a simple hero unit, a simple jumbotron-style component for calling
