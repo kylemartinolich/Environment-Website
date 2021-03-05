@@ -6,6 +6,14 @@ import Button from 'react-bootstrap/Button';
 import LandingButton from '../../components/LandingButton/LandingButton';
 import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
+import Overlay from 'react-bootstrap/Overlay';
+
+const renderTooltip = (props) => (
+  <Tooltip id="button-tooltip" {...props}>
+    Simple tooltip
+  </Tooltip>
+);
+
 
 
 class LandingPage extends Component{
@@ -29,9 +37,15 @@ class LandingPage extends Component{
                                 extra attention to featured content or information.
                             </p>
                             <br></br>
-                            <p>
-                            <a href="" className={classes.btn}>Learn more</a>
-                            </p>
+                            <div>
+                                <OverlayTrigger
+                                    placement="right"
+                                    delay={{ show: 250, hide: 400 }}
+                                    overlay={renderTooltip}
+                                >
+                                    <Button variant="success">Hover me to see</Button>
+                                </OverlayTrigger>,
+                            </div>
                     </div>
 
                 </div>
