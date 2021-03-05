@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import LandingButton from '../../components/LandingButton/LandingButton';
 import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
-import Overlay from 'react-bootstrap/Overlay';
+import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
@@ -48,7 +48,8 @@ class LandingPage extends Component{
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip}
                                 >
-                                    <img class="img-fluid" src="../../assets/Miscellaneous/info.png"></img>                              
+                                   <Image src="../../assets/Miscellaneous/info.png" roundedCircle />
+                                                                  
                                 </OverlayTrigger>,
                             </div>
                     </div>
