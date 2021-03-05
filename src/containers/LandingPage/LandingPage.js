@@ -48,7 +48,7 @@ class LandingPage extends Component{
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip}
                                 >
-                                   <Image src="../../assets/Miscellaneous/info.png" roundedCircle />
+                                   <Image src="././assets/Miscellaneous/info.png" fluid />
                                                                   
                                 </OverlayTrigger>,
                             </div>
