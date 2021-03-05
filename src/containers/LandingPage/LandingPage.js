@@ -41,7 +41,7 @@ class LandingPage extends Component{
                             <p>
                                 <a href="" className={classes.btn}>Learn more</a>
                             </p>
-                            <div>
+                            <div class="position-absolute top-0 left-0">
                                 <OverlayTrigger
                                     placement="right"
                                     delay={{ show: 250, hide: 400 }}
