@@ -12,7 +12,7 @@ import Row from 'react-bootstrap/Row'
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
-    Simple tooltip
+     Lake Wimico in northwest Florida © Kierstyn Cox/TNC
   </Tooltip>
 );
 
