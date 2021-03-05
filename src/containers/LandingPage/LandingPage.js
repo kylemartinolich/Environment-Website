@@ -39,13 +39,16 @@ class LandingPage extends Component{
                                 extra attention to featured content or information.
                             </p>
                             <br></br>
+                            <p>
+                                <a href="" className={classes.btn}>Learn more</a>
+                            </p>
                             <div>
                                 <OverlayTrigger
                                     placement="right"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip}
                                 >
-                                    <Button variant="success">Hover me to see</Button>
+                                    <img class="img-fluid" src="../../assets/Miscellaneous/info.png"></img>                              
                                 </OverlayTrigger>,
                             </div>
                     </div>
