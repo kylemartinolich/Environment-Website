@@ -7,6 +7,8 @@ import LandingButton from '../../components/LandingButton/LandingButton';
 import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
 import Overlay from 'react-bootstrap/Overlay';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
