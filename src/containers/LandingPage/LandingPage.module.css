@@ -43,7 +43,9 @@
 }
 }
 
-
+html{
+    overflow-y: hidden;
+}
 
 .showcase {
     background: url(../../assets/Rivers/Apalachicola_Bay.png) no-repeat center center/cover;
