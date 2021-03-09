@@ -32,6 +32,7 @@
     background: url(../../assets/Rivers/Chattahoochee_River.png) no-repeat center center/cover;
     height: 91.7vh;
     max-width: 100%;
+
 }
 
 .showcasecontent {
@@ -80,13 +81,18 @@
     margin: auto;
 }
 .text{
-    background: linear-gradient( #6E5A4A, #00ffff );
+    background: linear-gradient( rgb(70,110,169), #00ffff );
     padding-left:15%;
     padding-right:15%;
     padding-top: 25px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     margin:auto;
-    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
+    box-shadow: inset 0px -10px 5px rgba(0, 0, 0, 0.349);
 
+}
+.shadow{
+    background-color: #00ffff;
+    padding-bottom: 15px;
+    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
 }
 p{margin-bottom:0px;}
