@@ -11,6 +11,14 @@ class UpperChattaPage extends Component{
     render(){
         return(
         <div>
+                        <header className={classes.showcase}>
+                <div className={classes.showcasecontent}>
+                    <div className={classes.container}>
+                    </div>
+
+                </div>
+
+            </header>
             
             <div className={classes.text}>
             <h2>Welcome to the Upper Chattahoochee!</h2>
@@ -25,15 +33,6 @@ class UpperChattaPage extends Component{
             </p>
             <br></br>
             </div>
-            <header className={classes.showcase}>
-                <div className={classes.showcasecontent}>
-                    <div className={classes.container}>
-                    </div>
-
-                </div>
-
-            </header>
-            <div className={classes.shadow}></div>
         </div>);
     }
 }

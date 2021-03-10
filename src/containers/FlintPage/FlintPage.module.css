@@ -29,7 +29,7 @@
 
 
 .showcase {
-    background: url(../../assets/Rivers/Chattahoochee_River.png) no-repeat center center/cover;
+    background: url(../../assets/Rivers/Flint_River.png) no-repeat center center/cover;
     height: 91.7vh;
     max-width: 100%;
 
@@ -81,7 +81,7 @@
     margin: auto;
 }
 .text{
-    background: linear-gradient( #73746E 10%, #00ffff );
+    background: linear-gradient( rgb(70,110,169), #00ffff );
     padding-left:15%;
     padding-right:15%;
     padding-top: 25px;
