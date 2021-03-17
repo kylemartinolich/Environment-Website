@@ -29,7 +29,7 @@
 
 
 .showcase {
-    background: url(../../assets/Rivers/ColumbusRiverWalk.png) no-repeat center center/cover;
+    background: url(../../assets/Rivers/LowerChatta.jpeg) no-repeat center center/cover;
     height: 91.7vh;
     max-width: 100%;
 }
@@ -80,7 +80,7 @@
     margin: auto;
 }
 .text{
-    background: linear-gradient( #404862, #00ffff );
+    background: linear-gradient( #607993, #00ffff );
     padding-left:15%;
     padding-right:15%;
     padding-top: 25px;
