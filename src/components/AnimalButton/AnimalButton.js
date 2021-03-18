@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './AnimalButton.module.css';
+//import classes from './AnimalButton.module.css';
 import Plus from '../../assets/Miscellaneous/plus.svg';
 const animalButton = (props) => (
     <div>
-        <img src={Plus}></img>
+        <img src="../../assets/Miscellaneous/plus.svg" alt="Plus Button"></img>
     </div>
     
 );

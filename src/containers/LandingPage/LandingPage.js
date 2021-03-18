@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Button from './components/Button/Button';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button';
+//import Jumbotron from 'react-bootstrap/Jumbotron';
+//import Button from 'react-bootstrap/Button';
 import LandingButton from '../../components/LandingButton/LandingButton';
 import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
