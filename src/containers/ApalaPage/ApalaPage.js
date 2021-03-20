@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import classes from './ApalaPage.module.css';
+import AccordionPage from '../../components/Accordion/Accordion';
+import SpeciesData from '../../speciesdata.json';
 
 class ApalaPage extends Component{
 
@@ -18,6 +20,7 @@ class ApalaPage extends Component{
                 </div>
 
             </header>
+            <AccordionPage animalList={SpeciesData.apa}/>
             <div className={classes.text}>
             <h2>Welcome to the Lower Chattahoochee!</h2>
             <p>
