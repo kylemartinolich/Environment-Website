@@ -8,7 +8,7 @@ import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import animalButton from '../../components/AnimalButton/AnimalButton';
+import AnimalButton from '../../components/AnimalButton/AnimalButton';
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -73,7 +73,7 @@ class LandingPage extends Component{
             <div className={classes.mapContainer}>
                 <img className={classes.map} alt="Map" src={this.state.image}/>
                 <LandingButton className={classes.items} changeImage={this.changeImageShown} changePage={this.props.changePage}/>
-                <animalButton/>
+                <AnimalButton/>
             </div>
         </div>);
     }
