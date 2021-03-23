@@ -6,14 +6,23 @@ import Button from 'react-bootstrap/Button';
 import classes from './ApalaPage.module.css';
 import AccordionPage from '../../components/Accordion/Accordion';
 import SpeciesData from '../../speciesdata.json';
+import AnimalButton from '../../components/AnimalButton/AnimalButton';
 
 class ApalaPage extends Component{
+    state={
+        showModal: false
+    }
 
+    showModalHandler = (handle)=>{
+        this.setState({showModal: !this.state.showModal});
+        console.log("Test");
+    }
     render(){
         return(
         <div>
         <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
+                    <AnimalButton showMyModal={this.showModalHandler}/>
                     <div className={classes.container}>
                     </div>
 
@@ -22,7 +31,7 @@ class ApalaPage extends Component{
             </header>
             <AccordionPage animalList={SpeciesData.apa}/>
             <div className={classes.text}>
-            <h2>Welcome to the Lower Chattahoochee!</h2>
+            <h2>Welcome to the Apalachicola!</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Velit dignissim sodales ut eu sem integer vitae justo eget. Porttitor eget dolor morbi non arcu. 

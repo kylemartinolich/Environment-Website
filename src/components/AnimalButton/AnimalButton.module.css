@@ -1,4 +1,12 @@
 .plusButton{
     height:35px;
     width: 35px;
+    filter: invert(15%) sepia(57%) saturate(4576%) hue-rotate(353deg) brightness(93%) contrast(122%);
+    border-radius: 55px;
+}
+
+.plusButton:hover{
+    transform: scale(1.2); 
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
 }

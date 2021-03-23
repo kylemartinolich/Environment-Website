@@ -8,8 +8,8 @@ import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
 import classes from './LandingPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import AnimalButton from '../../components/AnimalButton/AnimalButton';
 
+var ReactRotatingText = require('react-rotating-text');
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
      Lake Wimico, Florida © Kierstyn Cox/TNC
@@ -40,7 +40,7 @@ class LandingPage extends Component{
                             </p>
                             <br></br>
                             <p>
-                                <a href="" className={classes.btn}>Learn more</a>
+                                <a href="" className={classes.btn}>Learn more about:<ReactRotatingText className='react-rotating-text-cursor'items={['Chattahoochee', 'Apalachicola', 'Flint']} /></a>
                             </p>
                     </div>
                 </div>
@@ -73,7 +73,6 @@ class LandingPage extends Component{
             <div className={classes.mapContainer}>
                 <img className={classes.map} alt="Map" src={this.state.image}/>
                 <LandingButton className={classes.items} changeImage={this.changeImageShown} changePage={this.props.changePage}/>
-                <AnimalButton/>
             </div>
         </div>);
     }
