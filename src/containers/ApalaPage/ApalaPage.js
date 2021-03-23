@@ -2,15 +2,16 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Button from './components/Button/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import classes from './ApalaPage.module.css';
 import AccordionPage from '../../components/Accordion/Accordion';
 import SpeciesData from '../../speciesdata.json';
 import AnimalButton from '../../components/AnimalButton/AnimalButton';
-
+import Plus from '../../assets/Miscellaneous/plus.png';
 class ApalaPage extends Component{
     state={
-        showModal: false
+        modalShow: false
     }
 
     showModalHandler = (handle)=>{
@@ -22,13 +23,15 @@ class ApalaPage extends Component{
         <div>
         <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
-                    <AnimalButton showMyModal={this.showModalHandler}/>
+                    <img  className={classes.plusButton} style={{top: '520px', right: '230px'}} onClick={() => this.setState({modalShow:true})} src={Plus} alt="Plus Button"></img>
+                    <img  className={classes.plusButton} style={{top: '120px', left: '230px'}} onClick={() => this.setState({modalShow:true})} src={Plus} alt="Plus Button"></img>
                     <div className={classes.container}>
                     </div>
 
                 </div>
 
             </header>
+            
             <AccordionPage animalList={SpeciesData.apa}/>
             <div className={classes.text}>
             <h2>Welcome to the Apalachicola!</h2>
@@ -42,6 +45,7 @@ class ApalaPage extends Component{
                 Donec et odio pellentesque diam volutpat. Mollis nunc sed id semper risus in hendrerit gravida rutrum.
             </p>
             <br></br>
+            <AnimalButton show={this.state.modalShow} onHide={() => this.setState({modalShow:false})} />
             </div>
 </div>);
     }

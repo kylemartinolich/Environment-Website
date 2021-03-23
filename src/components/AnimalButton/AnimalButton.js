@@ -2,10 +2,18 @@ import React from 'react';
 import classes from './AnimalButton.module.css';
 import Plus from '../../assets/Miscellaneous/plus.png';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 var modal;
-const animalButton = (props) => (
-    props.setShowModal == true ? modal = ( <Modal size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+const animalButton = (props) => (<div>
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           Modal heading
@@ -20,12 +28,9 @@ const animalButton = (props) => (
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.showMyModal}>Close</Button>
+        <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
-    </Modal> ): null,
-    <div onClick={() => props.setShowModal(true)}onHide={() => props.setShowModal(false)}>
-        {modal}
-        <img  className={classes.plusButton}   src={Plus} alt="Plus Button"></img>
+    </Modal>
     </div>
     
 );

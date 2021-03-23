@@ -6,7 +6,9 @@
 }
 
 .plusButton:hover{
-    transform: scale(1.2); 
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
+    transform: scale(1.2) rotate(90deg); 
+    
+    transition: all .3s;
+    -webkit-transition: all .3s;
+
 }
