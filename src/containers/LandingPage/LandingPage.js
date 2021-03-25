@@ -71,6 +71,7 @@ class LandingPage extends Component{
             </p>
             </div>
             <div className={classes.mapContainer}>
+                <div>
                 <img className={classes.map} alt="Map" src={this.state.image}/>
                 <div class="position-absolute bottom-0 left-0">
                     <OverlayTrigger
@@ -84,6 +85,7 @@ class LandingPage extends Component{
                                     </svg>
                                                                   
                     </OverlayTrigger>,
+                </div>
                 </div>
                 <LandingButton className={classes.items} changeImage={this.changeImageShown} changePage={this.props.changePage}/>
             </div>
