@@ -18,30 +18,34 @@ const renderTooltip = (props) => (
 
 
 
+
 class LandingPage extends Component{
     state={
-        image:Chattahoochee_watershed
+        image:Chattahoochee_watershed,
+        myRef:null
     }
+
 
     changeImageShown = (pic)=>{
         this.setState({image: pic});
 
     }
+   
     render(){
         return(
         <div className={classes.LandingPage}>
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
-                        <h1 className={classes.Title}>Hello, World!</h1>
+                        <h1 className={classes.Title}>
+                                Learn more about: <br></br><ReactRotatingText className='react-rotating-text-cursor'items={['Chattahoochee', 'Apalachicola', 'Flint']} />
+                            </h1>
                             <p>
                                 This is a simple hero unit, a simple jumbotron-style component for calling
                                 extra attention to featured content or information.
                             </p>
                             <br></br>
-                            <p>
-                                <a href="" className={classes.btn}>Learn more about:<ReactRotatingText className='react-rotating-text-cursor'items={['Chattahoochee', 'Apalachicola', 'Flint']} /></a>
-                            </p>
+                            <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
                     </div>
                 </div>
                 <div class="position-absolute bottom-0 left-0">
@@ -55,7 +59,7 @@ class LandingPage extends Component{
                                         <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                                     </svg>
                                                                   
-                    </OverlayTrigger>,
+                    </OverlayTrigger>
                 </div>
             </header>
             <div className={classes.text}>
@@ -82,9 +86,9 @@ class LandingPage extends Component{
                                         <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                                     </svg>
                                                                   
-                    </OverlayTrigger>,
+                    </OverlayTrigger>
                 </div>
-                <img className={classes.map} alt="Map" src={this.state.image}/>
+                <img  className={classes.map} alt="Map" src={this.state.image}/>
                 <LandingButton className={classes.items} changeImage={this.changeImageShown} changePage={this.props.changePage}/>
             </div>
         </div>);
