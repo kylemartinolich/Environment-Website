@@ -26,6 +26,11 @@
 }
 }
 
+body{
+    overflow-x: hidden;
+    padding-right:0px !important;
+}
+
 .chevron {
 
   box-sizing: border-box;
@@ -39,6 +44,7 @@
   position:fixed;
   bottom:35px;
 }
+
 
 .chevron:hover {
   border-bottom-width: 7px;

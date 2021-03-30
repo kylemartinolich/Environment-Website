@@ -25,6 +25,10 @@
     transition: color 0.5s,  background 0.5s;
 }
 }
+body{
+    overflow-x: hidden;
+    padding-right:0px !important;
+}
 
 .chevron {
 

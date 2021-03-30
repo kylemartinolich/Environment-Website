@@ -111,6 +111,15 @@
     color: #fff;
 }
 
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    padding-right:0px !important;
+}
 .btn {
     color: #00ffff;
     text-decoration: none;

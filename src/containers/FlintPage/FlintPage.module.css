@@ -51,8 +51,10 @@
 
 }
 
-
-
+body{
+    overflow-x: hidden;
+    padding-right:0px !important;
+}
 
 .showcase {
     background: url(../../assets/Rivers/Flint_River.png) no-repeat center center/cover;

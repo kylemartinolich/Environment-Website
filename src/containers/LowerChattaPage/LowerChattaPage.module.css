@@ -26,6 +26,11 @@
 }
 }
 
+body{
+    overflow-x: hidden;
+    padding-right:0px !important;
+}
+
 .chevron {
 
   box-sizing: border-box;
