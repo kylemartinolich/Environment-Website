@@ -34,6 +34,7 @@ class ApalaPage extends Component{
                     <img  className={classes.plusButton} style={{top: '520px', right: '230px'}} onClick={() => this.setState({modalShow:true})} src={Plus} alt="Plus Button"></img>
                     <img  className={classes.plusButton} style={{top: '120px', left: '230px'}} onClick={() => this.setState({modalShow:true})} src={Plus} alt="Plus Button"></img>
                     <div className={classes.container}>
+                        <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
                     </div>
 
                 </div>

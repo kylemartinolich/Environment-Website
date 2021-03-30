@@ -21,6 +21,7 @@ class ApalaBayPage extends Component{
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
+                        <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
                     </div>
 
                 </div>
