@@ -41,8 +41,7 @@ class LandingPage extends Component{
                                 Learn more about: <br></br><ReactRotatingText className='react-rotating-text-cursor'items={['Chattahoochee', 'Apalachicola', 'Flint']} />
                             </h1>
                             <p>
-                                This is a simple hero unit, a simple jumbotron-style component for calling
-                                extra attention to featured content or information.
+                                Click the arrow down below to get started!
                             </p>
                             <br></br>
                             <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
