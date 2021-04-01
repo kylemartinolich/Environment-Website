@@ -37,7 +37,12 @@
         }
     ],
     "flint":[{
-
+            "name": "Barbour’s Map Turtle",
+            "info": "The Barbour’s map turtle is a freshwater turtle found in the Apalachicola, Chattahoochee and Flint rivers and their major tributaries in southeastern Alabama, southwestern Georgia and the Florida panhandle. It is named in honor of American herpetologist Thomas Barbour. The best available science indicates the species has moderate to high resiliency, redundancy and representation throughout the majority of its range. The species continues to thrive, and its conservation status is not expected to significantly change in the foreseeable future."
+        },
+        {
+            "name": "Shoal Bass",
+            "info": "Shoal bass are similar in body shape to largemouth bass, but unlike the largemouth, the shoal bass has scales on the base portion of the second dorsal fin; their first and second dorsal fins are clearly connected, and its upper jaw does not extend past the eye. Shoal bass also lack the dark lateral (down the side) band that largemouth have. Shoal bass have vertical stripes above the midline of the body which resemble tiger stripes. The Shoal Bass is a focal species for research and conservation efforts because it’s considered imperiled throughout its native range (the Apalachicola-Chattahoochee-Flint River basin), having faced population loss and decline throughout. The largest hit has been at the fringes of its range and in mainstem portions of the river near reservoirs. Being a habitat specialist, they just do not do well in reservoir-like conditions and are thus much worse off in the Chattahoochee River where there are 14 impoundments within the mainstem."
         }
     ]
 }
