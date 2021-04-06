@@ -3,5 +3,6 @@
     color: #FFF;
 }
 .body{
-    background-color: darkgray;
+    background: no-repeat center center/cover;
+    color: #FFF;
 }
