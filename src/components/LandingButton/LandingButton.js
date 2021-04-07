@@ -11,9 +11,10 @@ import UpperChattahoochee_River from '../../assets/Rivers/UpperChatta.jpg';
 import LowerChattahoochee_River from '../../assets/Rivers/LowerChatta.jpeg';
 import Apalachicola_River from '../../assets/Rivers/Apalachicola_River.jfif';
 import Apalachicola_Bay from '../../assets/Rivers/Apalachicola_Bay.png';
-const elements = ['Upper Chattahoochee', 'Lower Chattahoochee','Flint', 'Apalachicola', 'Apalachicola Bay'];
+import chattahoochee from '../../assets/chattahoochee.png';
+const elements = ['Chattahoochee', 'Lower Chattahoochee','Flint', 'Apalachicola', 'Apalachicola Bay'];
 let items = [];
-let pics = [UpperChattahoochee_watershed, LowerChattahoochee_watershed, Flint_watershed, Apalachicola_watershed, ApalachicolaBay_watershed]
+let pics = [chattahoochee, LowerChattahoochee_watershed, Flint_watershed, Apalachicola_watershed, ApalachicolaBay_watershed]
 let buttonPics = [UpperChattahoochee_River, LowerChattahoochee_River, Flint_River, Apalachicola_River, Apalachicola_Bay]
 class LandingButton extends Component{
     render(){
