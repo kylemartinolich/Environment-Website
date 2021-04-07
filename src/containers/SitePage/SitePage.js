@@ -11,6 +11,7 @@ import ApalaBayPage from '../ApalaBayPage/ApalaBayPage';
 import Footer from '../../components/Footer/Footer';
 import Auxillary from '../../hoc/Auxillary';
 import classes from './SitePage.module.css';
+
 class SitePage extends Component{
     state = {
         view: 'home'
@@ -27,7 +28,7 @@ class SitePage extends Component{
         if(this.state.view === 'Flint'){
             return (<FlintPage/>);
         }
-        if(this.state.view === 'Upper Chattahoochee'){
+        if(this.state.view === 'Chattahoochee'){
             return (<UpperChattaPage/>);
         }
         if(this.state.view === 'Lower Chattahoochee'){
