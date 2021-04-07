@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
+.accord{
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .map {
+    width:300px;
+    height:300px;
+  }
+  .accord{
+    display: inline;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .map {
+    width:300px;
+    height:300px;
+  }
+  .accord{
     width:300px;
     height:300px;
   }
@@ -60,9 +81,10 @@ body{
 
 
 .showcase {
-    background: url(../../assets/Rivers/Apalachicola_Bay.png) no-repeat center center/cover;
+    /*background: url(../../assets/Rivers/Apalachicola_River.png) no-repeat center center/cover;*/
     height: 91.7vh;
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 90%;
 
 }
 

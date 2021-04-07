@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import classes from './FlintPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import AccordionPage from '../../components/Accordion/Accordion';
+import SpeciesData from '../../speciesdata.json';
+import flintpic from '../../assets/Rivers/Flint_River.png';
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -18,7 +21,69 @@ class FlintPage extends Component{
     render(){
         return(
         <div>
-            <header className={classes.showcase}>
+            <img src={flintpic} className={classes.showcase} />
+            <div className={classes.accord}>
+            <AccordionPage animalList={SpeciesData.flint}/>
+            </div>
+            <div className={classes.text}>
+            <h2>Welcome to the Flint!</h2>
+            <p>
+               The Flint River, which is contained entirely within the state of Georgia,
+                originates on the southern edge of the Atlanta metropolitan area under
+                the Hartsfield-Jackson Atlanta International Airport, in Clayton County,
+                and flows southerly in a wide eastward arc to Decatur County in southwest
+                Georgia, before flowing into Lake Seminole. 
+            </p>
+            <br/>
+            <p>
+                The Flint River first sees the light of day at the mouth of a concrete 
+                culvert on the south side of Virginia Avenue in Hapeville, just north of
+                Hartsfield Atlanta International Airport.
+            </p>
+            <br/>
+            <p>
+                The length of the main stem of the Flint River is 349 river miles, and it
+                drains an area of 8,460 square miles. The Flint River flows unimpeded for
+                nearly 220 river miles, which makes it one of only 40 rivers in the U.S.
+                that flow more than 200 river miles unimpeded.
+            </p>
+            <br/>
+            <p>
+                The lower part of the Flint River Basin, together with the upper part of
+                the Apalachicola Basin, has the highest species density of amphibians and
+                reptiles on the continent, north of Mexico.
+            </p>
+            <br/>
+            <p>
+                A new species of fish, called the Halloween Darter, is found only in the
+                Flint, Chattahoochee and Apalachicola Rivers. The Halloween Darter, or
+                Percina crypta, is a small fish that requires a habitat of swiftly
+                flowing water over rocky shoals. The Shoal bass, a species of freshwater
+                fish in the sunfish family, is considered the signature species of the
+                Flint River. 
+            </p>
+
+            <br></br>
+            </div>
+</div>);
+    }
+}
+export default FlintPage;
+/*
+<Jumbotron>
+  <h1>Hello, flint!</h1>
+  <p>
+    This is a simple hero unit, a simple jumbotron-style component for calling
+    extra attention to featured content or information.
+  </p>
+  <p>
+    <Button variant="primary">Learn more</Button>
+  </p>
+</Jumbotron>
+*/
+
+/*
+<header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
                         <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
@@ -39,32 +104,4 @@ class FlintPage extends Component{
                     </OverlayTrigger>
                 </div>
             </header>
-            <div className={classes.text}>
-            <h2>Welcome to the Lower Chattahoochee!</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Velit dignissim sodales ut eu sem integer vitae justo eget. Porttitor eget dolor morbi non arcu. 
-                Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Metus aliquam eleifend mi in nulla posuere. 
-                Amet justo donec enim diam vulputate ut pharetra. Dolor sit amet consectetur adipiscing elit. 
-                Tempor nec feugiat nisl pretium fusce id velit. Mauris cursus mattis molestie a iaculis at erat. 
-                Praesent semper feugiat nibh sed pulvinar. Commodo quis imperdiet massa tincidunt nunc pulvinar. 
-                Donec et odio pellentesque diam volutpat. Mollis nunc sed id semper risus in hendrerit gravida rutrum.
-            </p>
-            <br></br>
-            </div>
-</div>);
-    }
-}
-export default FlintPage;
-/*
-<Jumbotron>
-  <h1>Hello, flint!</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
-  </p>
-  <p>
-    <Button variant="primary">Learn more</Button>
-  </p>
-</Jumbotron>
 */

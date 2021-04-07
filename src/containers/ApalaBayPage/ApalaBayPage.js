@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import classes from './ApalaBayPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import AccordionPage from '../../components/Accordion/Accordion';
+import SpeciesData from '../../speciesdata.json';
+import apaBaypic from '../../assets/Rivers/Apalachicola_Bay.png';
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -18,6 +21,71 @@ class ApalaBayPage extends Component{
     render(){
         return(
         <div>
+            <img src={apaBaypic} className={classes.showcase} />
+            <div className={classes.accord}>
+            <AccordionPage animalList={SpeciesData.apaBay}/>
+            </div>
+            <div className={classes.text}>
+            <h2>Welcome to the Apalachicola Bay!</h2>
+            <p>
+                Apalachicola Bay is an estuary located on the northwest coast of Florida.
+                The Apalachicola Bay system also includes St. George Sound, St. Vincent
+                Sound and East Bay, covering an area of about 208 square miles (540 km2).
+                Water exchange occurs through Indian Pass, West Pass, East Pass and the
+                Duer Channel. The estuary has been designated as a National Estuarine
+                Research Reserve and the Apalachicola River is the largest source of
+                freshwater to the estuary. Combined with the Chattahoochee, Flint,
+                and Ochlockonee River they drain a watershed of over 20,000 square
+                miles (50,000 km2) at a rate of 19,599 cubic feet (550 m3) per
+                second according to the USGS (United States Geological Society)
+                in 2002.
+            </p>
+            <br/>
+            <p>
+                The Apalachicola Bay formerly produced 90 percent of Florida’s oysters
+                but the oysters, which thrive in brackish water, appear to be diminishing
+                rapidly as a result of Atlanta Municipal water usage, which is diminishing
+                the fresh water flowing into the bay. The increasingly salty water also 
+                increases the presence of oyster predators.
+            </p>
+            <br/>
+            <p>
+                In July of 2020 The Florida Fish and Wildlife Conservation Commission 
+                unanimously voted to shut down the state's iconic Apalachicola oyster 
+                fishery after years of drought and other pressures devastated wild 
+                oyster beds. Florida fisheries regulators say a moratorium on oyster 
+                harvesting for up to five years will give wild oyster reefs time to 
+                regenerate.
+            </p>
+            <br/>
+            <p>
+                Since a 2012 federal fisheries disaster declaration, several state and 
+                federal projects have sought to restore the bay but with little lasting 
+                success. The annual oyster harvest has dropped from more than 3 million 
+                lbs to less than 21,000 lbs. The dockside dollar value of that catch 
+                declined 98% over that time period, according to the Florida Division 
+                of Marine Fisheries management.
+            </p>
+            <br></br>
+            </div>
+        </div>);
+    }
+}
+export default ApalaBayPage;
+/*
+<Jumbotron>
+  <h1>Hello, Apalachacola Bay!</h1>
+  <p>
+    This is a simple hero unit, a simple jumbotron-style component for calling
+    extra attention to featured content or information.
+  </p>
+  <p>
+    <Button variant="primary">Learn more</Button>
+  </p>
+</Jumbotron>
+*/
+
+/*
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
@@ -39,32 +107,4 @@ class ApalaBayPage extends Component{
                     </OverlayTrigger>
                 </div>
             </header>
-            <div className={classes.text}>
-            <h2>Welcome to the Lower Chattahoochee!</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Velit dignissim sodales ut eu sem integer vitae justo eget. Porttitor eget dolor morbi non arcu. 
-                Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Metus aliquam eleifend mi in nulla posuere. 
-                Amet justo donec enim diam vulputate ut pharetra. Dolor sit amet consectetur adipiscing elit. 
-                Tempor nec feugiat nisl pretium fusce id velit. Mauris cursus mattis molestie a iaculis at erat. 
-                Praesent semper feugiat nibh sed pulvinar. Commodo quis imperdiet massa tincidunt nunc pulvinar. 
-                Donec et odio pellentesque diam volutpat. Mollis nunc sed id semper risus in hendrerit gravida rutrum.
-            </p>
-            <br></br>
-            </div>
-        </div>);
-    }
-}
-export default ApalaBayPage;
-/*
-<Jumbotron>
-  <h1>Hello, Apalachacola Bay!</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
-  </p>
-  <p>
-    <Button variant="primary">Learn more</Button>
-  </p>
-</Jumbotron>
 */
