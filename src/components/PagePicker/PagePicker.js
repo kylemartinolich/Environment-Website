@@ -14,7 +14,7 @@ const pagePicker = (props) => (
     <Nav.Link  active={props.currentPage === 'home'} onClick={() => props.changePage('home')}>Home</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link active={props.currentPage === 'Upper Chattahoochee'} onClick={() => props.changePage('Upper Chattahoochee')}>Upper Chattahoochee</Nav.Link>
+    <Nav.Link active={props.currentPage === 'Chattahoochee'} onClick={() => props.changePage('Chattahoochee')}>Chattahoochee</Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link active={props.currentPage === 'Lower Chattahoochee'} onClick={() => props.changePage('Lower Chattahoochee')}>Lower Chattahoochee</Nav.Link>
