@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
-import classes from './UpperChattaPage.module.css';
+import classes from './ChattaPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import AccordionPage from '../../components/Accordion/Accordion';
@@ -17,7 +17,7 @@ const renderTooltip = (props) => (
   </Tooltip>
 );
 
-class UpperChattaPage extends Component{
+class ChattaPage extends Component{
 
     render(){
         return(
@@ -53,7 +53,7 @@ class UpperChattaPage extends Component{
         </div>);
     }
 }
-export default UpperChattaPage;
+export default ChattaPage;
 /*<Jumbotron>
             <h1>Hello, Upper Chattahoochee!</h1>
             <p>

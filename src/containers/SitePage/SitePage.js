@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from '.././LandingPage/LandingPage';
 import PagePicker from '../../components/PagePicker/PagePicker';
 import FlintPage from '../FlintPage/FlintPage';
-import UpperChattaPage from '../UpperChattaPage/UpperChattaPage';
+import ChattaPage from '../ChattaPage/ChattaPage';
 import LowerChattaPage from '../LowerChattaPage/LowerChattaPage';
 import ApalaPage from '../ApalaPage/ApalaPage';
 import ApalaBayPage from '../ApalaBayPage/ApalaBayPage';
@@ -29,7 +29,7 @@ class SitePage extends Component{
             return (<FlintPage/>);
         }
         if(this.state.view === 'Chattahoochee'){
-            return (<UpperChattaPage/>);
+            return (<ChattaPage/>);
         }
         if(this.state.view === 'Lower Chattahoochee'){
             return (<LowerChattaPage/>);
