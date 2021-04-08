@@ -34,6 +34,7 @@ class ApalaPage extends Component{
             <div className={classes.accord}>
             <AccordionPage animalList={SpeciesData.apa}/>
             </div>
+            <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
             <div className={classes.text}>
             <div className={classes.info}>
             <h2>Welcome to the Apalachicola!</h2>

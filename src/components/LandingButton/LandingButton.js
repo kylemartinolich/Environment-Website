@@ -12,10 +12,10 @@ import LowerChattahoochee_River from '../../assets/Rivers/LowerChatta.jpeg';
 import Apalachicola_River from '../../assets/Rivers/Apalachicola_River.jfif';
 import Apalachicola_Bay from '../../assets/Rivers/Apalachicola_Bay.png';
 import chattahoochee from '../../assets/chattahoochee.png';
-const elements = ['Chattahoochee', 'Lower Chattahoochee','Flint', 'Apalachicola', 'Apalachicola Bay'];
+const elements = ['Chattahoochee', 'Flint', 'Apalachicola', 'Apalachicola Bay'];
 let items = [];
-let pics = [chattahoochee, LowerChattahoochee_watershed, Flint_watershed, Apalachicola_watershed, ApalachicolaBay_watershed]
-let buttonPics = [UpperChattahoochee_River, LowerChattahoochee_River, Flint_River, Apalachicola_River, Apalachicola_Bay]
+let pics = [chattahoochee, Flint_watershed, Apalachicola_watershed, ApalachicolaBay_watershed]
+let buttonPics = [UpperChattahoochee_River, Flint_River, Apalachicola_River, Apalachicola_Bay]
 class LandingButton extends Component{
     render(){
         items = [];

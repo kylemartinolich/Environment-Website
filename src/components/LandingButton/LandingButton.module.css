@@ -5,9 +5,11 @@
     background-size: cover;
     float:left;
     padding:0;
-     border-radius: 25px;
-     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
-     
+    border-radius: 25px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 .itemRight{
@@ -18,10 +20,12 @@
     float:right;
     padding:0;
     border-radius: 25px;
-   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
-    
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
+    margin-left:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1143px) {
   .itemLeft {
     background-repeat: no-repeat;
     height: 175px !important;
@@ -31,8 +35,8 @@
     padding:0;
     border-radius: 25px;
    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
-   margin-right: 5%;
-    
+    margin-right: 5%;
+    margin-left:5%;
     
   }
   .itemRight {
@@ -76,19 +80,19 @@
     width:420px;
     color:red;
     height:1000px;
-    margin-right:28% !important;
+    margin-right:30% !important;
 }
 }
 
 @media only screen and (max-width: 600px) {
   .itemLeft {
     background-repeat: no-repeat;
-    height: 75px !important;
-    width: 75px !important;
+    height: 100px !important;
+    width: 100px !important;
     background-size: cover;
     padding:0;
     margin-top: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.349);
     margin-right: 5%;
     margin-left:5%;
@@ -96,12 +100,12 @@
   }
   .itemRight {
     background-repeat: no-repeat;
-    height: 75px !important;
-    width: 75px !important;
+    height: 100px !important;
+    width: 100px !important;
     background-size: cover;
     padding:0;
     margin-top:5px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.349);
     margin-right: 5%;
     margin-left:5%;
@@ -109,12 +113,12 @@
   .itemLeft h3{
     color: white;
     background-color: rgba(0, 0, 0, 0.35);
-    border-radius: 10px !important;
+    border-radius: 15px !important;
     padding-top:10% !important;
     padding-left: 10px;
     padding-right: 10px;
-    height:75px !important;
-    width:75px !important;
+    height:100px !important;
+    width:100px !important;
     font-size:15px;
     font-family: Arial, sans-serif;
     word-break: break-all;
@@ -122,12 +126,12 @@
 .itemRight h3{
     color: white;
     background-color: rgba(0, 0, 0, 0.35);
-    border-radius: 10px !important;
+    border-radius: 15px !important;
     padding-top:10% !important;
     padding-left: 10px;
     padding-right: 10px;
-    height:75px !important;
-    width:75px !important;
+    height:100px !important;
+    width:100px !important;
     font-size:15px;
     font-family: Arial, sans-serif;
     word-break: break-all;
@@ -172,10 +176,10 @@
     font-family: Arial, sans-serif;
 }
 .list{
-    padding-top: 50px;
+    padding-top: 125px;
     float:right;
     text-align: center;
-    width:420px;
+    width:450px;
     color:red;
     height:1000px;
     margin-right:20%;
