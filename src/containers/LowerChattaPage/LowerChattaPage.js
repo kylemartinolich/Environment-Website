@@ -42,7 +42,7 @@ class LowerChattaPage extends Component{
                 </div>
             </header>
             <div className={classes.text}>
-            <h2>Welcome to the Lower Chattahoochee!</h2>
+            <h2>Welcome to the Water Wars!</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Velit dignissim sodales ut eu sem integer vitae justo eget. Porttitor eget dolor morbi non arcu. 
