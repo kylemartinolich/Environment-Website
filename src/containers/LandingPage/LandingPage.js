@@ -49,7 +49,7 @@ class LandingPage extends Component{
                                 Click the arrow down below to get started!
                             </p>
                             <br></br>
-                            <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
+                            <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,850)}className={classes.chevron}></i></div>
                     </div>
                 </div>
                 <div class="position-absolute bottom-0 left-0">

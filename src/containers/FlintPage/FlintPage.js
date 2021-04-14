@@ -25,6 +25,7 @@ class FlintPage extends Component{
             <div className={classes.accord}>
             <AccordionPage animalList={SpeciesData.flint}/>
             </div>
+            <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,750)}className={classes.chevron}></i></div>
             <div className={classes.text}>
             <h2>Welcome to the Flint!</h2>
             <p>

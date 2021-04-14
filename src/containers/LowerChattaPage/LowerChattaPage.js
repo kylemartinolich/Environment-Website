@@ -20,10 +20,11 @@ class LowerChattaPage extends Component{
     render(){
         return(
         <div>
+            
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
-                        <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,1000)}className={classes.chevron}></i></div>
+                        <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,750)}className={classes.chevron}></i></div>
                     </div>
 
                 </div>

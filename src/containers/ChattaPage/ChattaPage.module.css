@@ -45,12 +45,12 @@ body{
   height: 5vw;
   width: 5vw;
   border-style: solid;
-  border-color: #ffffff94;
+  border-color: #fffffff1;
   border-width: 0px 5px 5px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
-  position:fixed;
-  bottom:35px;
+  position:absolute;
+  bottom:65px;
 }
 
 .chevron:hover {
@@ -120,9 +120,9 @@ body{
     margin: auto;
 }
 .text{
-    background: linear-gradient( #6988A7, #00ffff );
-    padding-left:15%;
-    padding-right:15%;
+    background: #008a8a;
+    padding-left:20%;
+    padding-right:20%;
     padding-top: 25px;
     padding-bottom: 20px;
     margin:auto;

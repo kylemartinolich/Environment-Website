@@ -37,17 +37,17 @@ body{
   height: 5vw;
   width: 5vw;
   border-style: solid;
-  border-color: #ffffff94;
+  border-color: #000000;
   border-width: 0px 5px 5px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
-  position:fixed;
-  bottom:35px;
+  position:absolute;
+  bottom:5px;
 }
 
 .chevron:hover {
-  border-bottom-width: 7px;
-  border-right-width: 7px;
+  border-bottom-width: 12px;
+  border-right-width: 12px;
 }
 
 .chevronContainer {
@@ -110,9 +110,9 @@ body{
     margin: auto;
 }
 .text{
-    background: linear-gradient( #607993, #00ffff );
-    padding-left:15%;
-    padding-right:15%;
+    background: #008a8a;
+    padding-left:20%;
+    padding-right:20%;
     padding-top: 25px;
     padding-bottom: 100px;
     margin:auto;

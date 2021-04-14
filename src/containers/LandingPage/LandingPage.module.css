@@ -2,8 +2,6 @@
     height: 70%;
     padding-left: 20%;
     overflow: hidden;
-    
-    background: linear-gradient( rgb(70,110,169), #00ffff );
     padding: 20px;
 }
 
@@ -27,10 +25,10 @@
     height:100%;
   }
   .btn {
-    color: #00ffff;
+    color: #008a8a;
     text-decoration: none;
     display: inline-block;
-    border: 1px solid #00ffff;
+    border: 1px solid #008a8a;
     border-radius: 10px;
     font-weight: bold;
     width:80%;
@@ -48,11 +46,13 @@ html{
     scroll-behavior: smooth;
     width:100%;
     overflow-x: hidden;
+    
 }
 
 body{
     overflow-x: hidden;
     padding-right:0px !important;
+    background: #008a8a;
 }
 
 .showcase {
@@ -87,7 +87,7 @@ body{
 .showcasecontent .Title{
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #00ffff;
+    color: #00FFFF;
 }
 .showcasecontent .btn {
     font-size: 1.5rem;
@@ -96,16 +96,16 @@ body{
 }
 
 .showcasecontent .btn:hover {
-    background: #00ffff;
+    background: #008a8a;
     color: #fff;
 }
 
 .btn {
-    color: #00ffff;
+    color: #008a8a;
     text-decoration: none;
     display: inline-block;
     padding: 1rem 2rem;
-    border: 1px solid #00ffff;
+    border: 1px solid #008a8a;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -114,15 +114,17 @@ body{
     margin: auto;
 }
 .text{
-    background-color: rgb(70,110,169);
-    padding-left:15%;
-    padding-right:15%;
+    background: #008a8a;
+    padding-left:20%;
+    padding-right:20%;
     padding-top: 25px;
     margin:auto;
     box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
 
 }
-p{margin-bottom:0px;}
+p{
+    margin-bottom:0px;
+}
 
 .chevron {
 
@@ -130,12 +132,12 @@ p{margin-bottom:0px;}
   height: 5vw;
   width: 5vw;
   border-style: solid;
-  border-color: #ffffff94;
+  border-color: #fffffff1;
   border-width: 0px 5px 5px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
-  position:fixed;
-  bottom:35px;
+  position:absolute;
+  bottom:15px;
 }
 
 .chevron:hover {
