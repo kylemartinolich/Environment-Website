@@ -12,6 +12,10 @@ import Plus from '../../assets/Miscellaneous/plus.png';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import apapic from '../../assets/Rivers/Apalachicola_River.png';
+import ImageMapper from 'react-image-mapper';
+
+
+
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -27,10 +31,52 @@ class ApalaPage extends Component{
         this.setState({showModal: !this.state.showModal});
         console.log("Test");
     }
+
+    enterArea(area) {
+    this.setState({ hoveredArea: area });
+    }
+
+    leaveArea(area) {
+        this.setState({ hoveredArea: null });
+    }
+
+    getTipPosition(area) {
+        return { top: `${area.center[1]}px`, left: `${area.center[0]}px` };
+    }
+
     render(){
+        let URL = {apapic}
+let MAP = {
+  name: "my-map",
+  areas: [
+    { name: "Snake", shape: "poly", coords: [872,1153,780,1181,784,1227,876,1263,757,1254,766,1300,894,1323,922,1268,913,1231,807,1208,890,1181,881,1167], fillColor: "blue"  },
+    { name: "Tree", shape: "poly", coords: [1105,1036,1220,1036,1293,1104,1321,1168,1280,1201,1188,1205,1234,1288,1110,1283,1142,1210,1046,1223,1023,1159,1018,1077], fillColor: "pink"  },
+    { name: "Fish", shape: "poly", coords: [1394,1612,1412,1552,1371,1557,1353,1520,1376,1483,1417,1479,1463,1465,1500,1460,1495,1428,1422,1415,1362,1405,1316,1451,1307,1497,1330,1552], fillColor: "yellow"  },
+    { name: "Bird", shape: "poly", coords: [2018,696,2155,724,2210,673,2183,614,2077,632], fillColor: "red"  },
+    { name: "Mussel", shape: "poly", coords: [2178,1366,2132,1457,2059,1489,1976,1476,1981,1402,2077,1356,2173,1356], fillColor: "red"  },
+    { name: "Salamander", shape: "poly", coords: [1720,1786,1775,1657,1843,1575,1921,1570,1917,1621,1820,1735,1733,1809], fillColor: "red"  },
+    { name: "Bear", shape: "poly", coords: [2934,1168,3003,1127,3159,1150,3209,1196,3232,1288,3132,1297,3054,1297,2962,1283,2994,1194,2925,1190], fillColor: "red"  },
+    { name: "Oyster", shape: "poly", coords: [2948,1602,2980,1739,2939,1822,2884,1854,2820,1826,2815,1785,2829,1734,2870,1717], fillColor: "red"  }
+    
+  ]
+}
+
         return(
         <div>
-            <img src={apapic} className={classes.showcase} />
+            <div className="showcase">
+            <ImageMapper src={apapic} map={MAP} width={2400} imgWidth={3260}
+    	        onClick={area => this.clicked(area)}
+    	        onMouseEnter={area => this.enterArea(area)}
+    	        onMouseLeave={area => this.leaveArea(area)}
+                />
+            {
+    	        this.state.hoveredArea &&
+    	        <span className="tooltip"
+    	          style={{ ...this.getTipPosition(this.state.hoveredArea)}}>
+    		        { this.state.hoveredArea && this.state.hoveredArea.name}
+    	        </span>
+                }
+            </div>
             <div className={classes.accord}>
             <AccordionPage animalList={SpeciesData.apa}/>
             </div>
