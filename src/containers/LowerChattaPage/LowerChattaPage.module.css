@@ -31,39 +31,6 @@ body{
     padding-right:0px !important;
 }
 
-.chevron {
-
-  box-sizing: border-box;
-  height: 5vw;
-  width: 5vw;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0px 5px 5px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-  position:absolute;
-  bottom:5px;
-}
-
-.chevron:hover {
-  border-bottom-width: 12px;
-  border-right-width: 12px;
-}
-
-.chevronContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-.showcase {
-    background: url(../../assets/Rivers/LowerChatta.jpeg) no-repeat center center/cover;
-    height: 91.7vh;
-    max-width: 100%;
-}
-
 .showcasecontent {
     display: flex;
     flex-direction: column;
@@ -119,4 +86,23 @@ body{
     box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
 
 }
-p{margin-bottom:0px;}
+.titles{
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: xx-large;
+    border-bottom: 3px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.states{
+    border: 2px solid white;
+    padding: 25px;
+}
+.important{
+    color: black;
+    font-size: 2rem;
+    text-shadow: white 0px 0px 10px;
+    padding: 1.5rem;
+}
+p{margin-bottom:10px;}

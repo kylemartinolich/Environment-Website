@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import classes from './Footer.module.css';
 const footer = (props) => (
     <div className={classes.Footer}>
-        <h2><strong>Lorem Ipsum</strong></h2>
+        <h2><strong>Find out more!</strong></h2>
 {/*       <Form className="justify-content-center">
     <Row>
         <Col sm={2}>

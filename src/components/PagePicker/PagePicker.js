@@ -14,15 +14,6 @@ const pagePicker = (props) => (
     <Nav.Link  active={props.currentPage === 'home'} onClick={() => props.changePage('home')}>Home</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link active={props.currentPage === 'Chattahoochee'} onClick={() => props.changePage('Chattahoochee')}>Chattahoochee</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link active={props.currentPage === 'Lower Chattahoochee'} onClick={() => props.changePage('Lower Chattahoochee')}>Water Wars</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link active={props.currentPage === 'Flint'} onClick={() => props.changePage('Flint')}>Flint</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
     <Nav.Link active={props.currentPage === 'Apalachicola'} onClick={() => props.changePage('Apalachicola')}>
       Apalachicola
     </Nav.Link>
@@ -31,6 +22,15 @@ const pagePicker = (props) => (
     <Nav.Link active={props.currentPage === 'Apalachicola Bay'} onClick={() => props.changePage('Apalachicola Bay')}>
       Apalachicola Bay
     </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link active={props.currentPage === 'Chattahoochee'} onClick={() => props.changePage('Chattahoochee')}>Chattahoochee</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link active={props.currentPage === 'Flint'} onClick={() => props.changePage('Flint')}>Flint</Nav.Link>
+  </Nav.Item>
+    <Nav.Item>
+    <Nav.Link active={props.currentPage === 'Lower Chattahoochee'} onClick={() => props.changePage('Lower Chattahoochee')}>Water Wars</Nav.Link>
   </Nav.Item>
 </Nav>
     </div>
