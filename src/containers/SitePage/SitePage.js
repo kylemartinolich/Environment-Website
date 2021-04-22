@@ -11,6 +11,8 @@ import ApalaBayPage from '../ApalaBayPage/ApalaBayPage';
 import Footer from '../../components/Footer/Footer';
 import Auxillary from '../../hoc/Auxillary';
 import classes from './SitePage.module.css';
+import { Dropdown } from 'react-bootstrap';
+import { DropdownButton } from 'react-bootstrap';
 
 class SitePage extends Component{
     state = {
@@ -47,13 +49,24 @@ class SitePage extends Component{
 
     render(){
         let currentPage = this.returnActivePage();
-        return(
-            
+        return(    
         <Auxillary>
+            <div className={classes.background}>
+            <div className={classes.normal}>
             <PagePicker
             currentPage = {this.state.view}
             changePage = {this.updateActivePage}
             />
+            </div>
+            <div className = {classes.mobile}>
+            <DropdownButton id="dropdown-basic-button" title="Select Page">
+            <PagePicker
+            currentPage = {this.state.view}
+            changePage = {this.updateActivePage}
+            />
+            </DropdownButton>
+            </div>
+            </div>
             <div className={classes.container}>
             {currentPage}
             </div>
