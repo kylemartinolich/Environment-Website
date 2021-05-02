@@ -115,7 +115,7 @@ body{
 }
 .text{
     background-image: url("../../assets/Miscellaneous/wavepattern.jpg");
-    background: #008a8a;
+   /* background: #008a8a;*/
     padding-left:20%;
     padding-right:20%;
     padding-top: 25px;
