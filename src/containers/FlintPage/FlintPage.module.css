@@ -79,10 +79,9 @@ body{
 
 .showcase {
     /*background: url(../../assets/Rivers/Apalachicola_River.png) no-repeat center center/cover;*/
-    height: 91.7vh;
-    min-width: 100%;
-    min-height: 90%;
-
+   height: auto;
+    max-width: 100%;
+    width: auto;
 }
 
 .showcasecontent {
