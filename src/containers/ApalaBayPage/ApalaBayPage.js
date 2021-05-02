@@ -2,26 +2,91 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Button from './components/Button/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import classes from './ApalaBayPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import AccordionPage from '../../components/Accordion/Accordion';
+import AnimalButton from '../../components/AnimalButton/AnimalButton';
+import Tooltip from 'react-bootstrap/Tooltip';
 import SpeciesData from '../../speciesdata.json';
-import apaBaypic from '../../assets/Rivers/Apalachicola_Bay.png';
+import apaBaypic from '../../assets/Rivers/apabay.jpg';
+import ImageMapper from 'react-image-mapper';
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
      Lake Wimico, Florida © Kierstyn Cox/TNC
   </Tooltip>
 );
-
 class ApalaBayPage extends Component{
 
+    constructor(props) {
+        super(props);
+        this.state = { windowWidth: window.innerWidth };
+    }
+
+    handleResize = (e) => {
+        this.setState({ windowWidth: window.innerWidth });
+    };
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+    componentWillUnmount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+    state={
+        modalShow: false
+    }
+
+    showModalHandler = (handle)=>{
+        this.setState({showModal: !this.state.showModal});
+        console.log("Test");
+    }
+
+    enterArea(area) {
+    this.setState({ hoveredArea: area });
+    }
+
+    leaveArea(area) {
+        this.setState({ hoveredArea: null });
+    }
+
+    getTipPosition(area) {
+        return { top: `${area.center[1]}px`, left: `${area.center[0]}px` };
+    }
+
+
     render(){
+        const { windowWidth } = this.state;
+        /*return <div>Current window width: {windowWidth}</div>*/
+
+        let URL = { apaBaypic }
+        let MAP = {
+            name: "my-map",
+            areas: [
+                { name: "Oysters", shape: "circle", coords: [1655,762,175] }
+            ]
+        }
+
         return(
         <div>
-            <img src={apaBaypic} className={classes.showcase} />
+            <div className="showcase">
+            <ImageMapper src={apaBaypic} map={MAP} width={windowWidth} imgWidth={3260}
+    	        onClick={area => this.clicked(area)}
+    	        onMouseEnter={area => this.enterArea(area)}
+    	        onMouseLeave={area => this.leaveArea(area)}
+                />
+            {
+    	        this.state.hoveredArea &&
+    	        <span className="tooltip"
+    	          style={{ ...this.getTipPosition(this.state.hoveredArea)}}>
+    		        { this.state.hoveredArea && this.state.hoveredArea.name}
+    	        </span>
+                }
+            </div>
             <div className={classes.accord}>
             <AccordionPage animalList={SpeciesData.apaBay}/>
             </div>

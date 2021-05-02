@@ -14,9 +14,6 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import apapic from '../../assets/Rivers/apalachicola.jpg';
 import ImageMapper from 'react-image-mapper';
 
-
-
-
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
      Apalachicola River, Georgia © Ebyabe
