@@ -70,7 +70,6 @@ body{
 }
 
 .showcasecontent {
-     background-image: url("../../assets/Miscellaneous/wavepattern.jpg");
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -115,6 +114,7 @@ body{
     margin: auto;
 }
 .text{
+    background-image: url("../../assets/Miscellaneous/wavepattern.jpg");
     background: #008a8a;
     padding-left:20%;
     padding-right:20%;
