@@ -82,7 +82,7 @@ body{
     right: 0;
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #fff;  
+    color: #000000;  
 }
 .showcasecontent .Title{
     font-size: 3rem;
@@ -120,7 +120,7 @@ body{
     padding-right:20%;
     padding-top: 25px;
     margin:auto;
-    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
+   /* box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);*/
 
 }
 p{
