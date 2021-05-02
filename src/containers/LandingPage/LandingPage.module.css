@@ -96,6 +96,7 @@ body{
 }
 
 .showcasecontent .btn:hover {
+    background-image: url("../../assets/Miscellaneous/wavepattern.jpg");
     background: #008a8a;
     color: #fff;
 }
