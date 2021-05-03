@@ -1,5 +1,6 @@
 
 .mapContainer {
+    background-image: url("../../assets/Miscellaneous/wavepatterns.jpg");
     height: 70%;
     padding-left: 20%;
     overflow: hidden;
