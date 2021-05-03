@@ -10,7 +10,7 @@
 .map {
     width: 500px;
     height:600px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
+   /* box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);*/
     margin-top: 50px;
 } 
 @media only screen and (max-width: 1200px) {
