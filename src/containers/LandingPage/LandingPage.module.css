@@ -1,4 +1,4 @@
-/*
+
 .mapContainer {
     height: 70%;
     padding-left: 20%;
@@ -9,7 +9,7 @@
     width: 500px;
     height:600px;
    /* box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);*/
-   /* margin-top: 50px;
+    margin-top: 50px;
 } 
 @media only screen and (max-width: 1200px) {
   .map {
@@ -109,13 +109,13 @@ body{
 .text{
     background-image: url("../../assets/Miscellaneous/wavepattern.jpg");
    /* background: #008a8a;*/
-  /* color: #000000;
+     color: #000000;
     padding-left:20%;
     padding-right:20%;
     padding-top: 25px;
     margin:auto;
     text-decoration: none;
-   /* box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);*//*
+   /* box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);*/
 
 }
 .p{
@@ -158,4 +158,4 @@ body{
   100% {
     opacity: 0;
   }
-} */
+} 
