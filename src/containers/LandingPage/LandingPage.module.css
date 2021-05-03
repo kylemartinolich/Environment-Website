@@ -4,9 +4,6 @@
     overflow: hidden;
     padding: 20px;
 }
-
-
-
 .map {
     width: 500px;
     height:600px;
@@ -40,7 +37,6 @@
     transition: color 0.5s,  background 0.5s;
 }
 }
-
 html{
     
     scroll-behavior: smooth;
@@ -48,13 +44,11 @@ html{
     overflow-x: hidden;
     
 }
-
 body{
     overflow-x: hidden;
     padding-right:0px !important;
     background: #008a8a;
 }
-
 .showcase {
     background: url(../../assets/Rivers/HomePage_Chatta.jfif) no-repeat center center/cover;
     height: 96.7vh;
@@ -68,7 +62,6 @@ body{
   top: 0; bottom: 0;
   background: rgba(0,0,0,.38);
 }
-
 .showcasecontent {
     display: flex;
     flex-direction: column;
@@ -94,12 +87,10 @@ body{
     padding: 1rem 10rem;
     transition: color 0.5s,  background 0.5s;
 }
-
 .showcasecontent .btn:hover {
     background: #008a8a;
     color: #000000;
 }
-
 .btn {
     color: #008a8a;
     text-decoration: none;
@@ -122,6 +113,7 @@ body{
     padding-right:20%;
     padding-top: 25px;
     margin:auto;
+    text-decoration: none;
    /* box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);*/
 
 }
@@ -129,7 +121,6 @@ body{
     margin-bottom:0px;
     color: #000000;
 }
-
 .chevron {
 
   box-sizing: border-box;
@@ -143,24 +134,19 @@ body{
   position:absolute;
   bottom:15px;
 }
-
 .chevron:hover {
   border-bottom-width: 7px;
   border-right-width: 7px;
 }
-
 .chevronContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
-
- 
 @keyframes blinking-cursor {
   0% {
     opacity: 0;
