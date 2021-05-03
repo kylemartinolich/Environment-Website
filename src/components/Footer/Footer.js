@@ -43,6 +43,7 @@ const footer = (props) => (
   </Button>
   </Form.Row>
 </Form>
+<i class="fab fa-facebook-f"></i>
 <span>
     © 2021 
 </span>
