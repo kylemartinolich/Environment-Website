@@ -162,18 +162,16 @@ body{
     box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
 
 }
-
-/*h2{
+.h2{
     color: #ffffff;
     text-shadow: 2px 2px #131313;
     font-family: 'Heebo', sans-serif;
 }
 
-p{
+.p{
     font-size: x-large;
     font-family: 'Heebo', sans-serif;
     margin-bottom:0px;
     color: #ffffff;
     text-shadow: 3px 3px #2c2c2c;
 }
-*/
