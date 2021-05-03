@@ -125,7 +125,7 @@ body{
    /* box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);*/
 
 }
-p{
+.p{
     margin-bottom:0px;
     color: #000000;
 }
