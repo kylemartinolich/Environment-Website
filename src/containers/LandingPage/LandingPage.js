@@ -66,9 +66,9 @@ class LandingPage extends Component{
                     </OverlayTrigger>
                 </div>
             </header>
-            <div classname = "text">
+            <div className={classes.text}>
             <h2>Welcome to the Environment Website!</h2>
-            <p>
+            <p classname={classes.p}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Velit dignissim sodales ut eu sem integer vitae justo eget. Porttitor eget dolor morbi non arcu. 
                 Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Metus aliquam eleifend mi in nulla posuere. 
