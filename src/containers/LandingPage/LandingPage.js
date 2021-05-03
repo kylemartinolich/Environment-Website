@@ -38,7 +38,7 @@ class LandingPage extends Component{
    
     render(){
         return(
-        <div>
+        <div className={classes.LandingPage}>
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>

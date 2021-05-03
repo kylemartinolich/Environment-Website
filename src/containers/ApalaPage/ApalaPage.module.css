@@ -93,7 +93,6 @@
 
 
 .showcase {
-    /*background: url(../../assets/Rivers/Apalachicola_River.png) no-repeat center center/cover;*/
     height: auto;
     max-width: 100%;
     width: auto;
@@ -164,7 +163,7 @@ body{
 
 }
 
-h2{
+/*h2{
     color: #ffffff;
     text-shadow: 2px 2px #131313;
     font-family: 'Heebo', sans-serif;
@@ -177,3 +176,4 @@ p{
     color: #ffffff;
     text-shadow: 3px 3px #2c2c2c;
 }
+*/
