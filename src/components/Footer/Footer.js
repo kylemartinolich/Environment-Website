@@ -44,7 +44,7 @@ const footer = (props) => (
   </Button>
   </Form.Row>
 </Form>
-<img src="fbicon" alt="facebook icon"></img>
+<div><img id="fbicon"></img></div>
 <span>
     © 2021 
 </span>
