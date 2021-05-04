@@ -7,6 +7,7 @@ import emailjs from 'emailjs-com';
 import Toast from 'react-bootstrap/Toast';
 import classes from './Footer.module.css';
 import fbicon from '../../assets/Miscellaneous/fbicon.png';
+import Image from 'react-bootstrap/Image';
 
 const footer = (props) => (
     <div className={classes.Footer}>
@@ -44,7 +45,9 @@ const footer = (props) => (
   </Button>
   </Form.Row>
 </Form>
-<div className={classes.icon}></div>
+<div>
+    <Image src="../../assets/Miscellaneous/fbicon.png" fluid />
+</div>
 <span>
     © 2021 
 </span>
