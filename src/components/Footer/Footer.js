@@ -44,15 +44,7 @@ const footer = (props) => (
   </Button>
   </Form.Row>
 </Form>
-<div id="x"></div>
-<script>
-var img = document.createElement("img");
- 
-img.src = "../../assets/Miscellaneous/fbicon.png";
-var src = document.getElementById("x");
- 
-src.appendChild(img);
-</script>
+<div className={classes.icon}></div>
 <span>
     © 2021 
 </span>
