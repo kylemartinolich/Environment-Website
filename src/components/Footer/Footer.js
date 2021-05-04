@@ -45,9 +45,9 @@ const footer = (props) => (
   </Button>
   </Form.Row>
 </Form>
-<div>
+
     <Image src="../../assets/Miscellaneous/fbicon.png" fluid />
-</div>
+
 <span>
     © 2021 
 </span>
