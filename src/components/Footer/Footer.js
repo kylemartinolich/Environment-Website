@@ -8,6 +8,13 @@ import Toast from 'react-bootstrap/Toast';
 import classes from './Footer.module.css';
 import fbicon from '../../assets/Miscellaneous/fbicon.png';
 
+var img = document.createElement("img"); 
+ 
+img.src = fbicon; 
+var src = document.getElementById("x"); 
+ 
+src.appendChild(img); 
+
 const footer = (props) => (
     <div className={classes.Footer}>
         <h2><strong>Find out more!</strong></h2>
@@ -44,7 +51,7 @@ const footer = (props) => (
   </Button>
   </Form.Row>
 </Form>
-<div><img id="fbicon"></img></div>
+<div id="x"></div>
 <span>
     © 2021 
 </span>
