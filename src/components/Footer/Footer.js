@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com';
 import Toast from 'react-bootstrap/Toast';
 import classes from './Footer.module.css';
-import fbicon from '../../assets/Miscellaneous/facebook-f-brands.svg';
+import fbicon from '../../assets/Miscellaneous/fbicon.png';
 
 const footer = (props) => (
     <div className={classes.Footer}>
