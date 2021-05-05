@@ -3,3 +3,12 @@
     width: 100%;
     position: relative;
 }
+.icons{
+    padding-top: 15px;
+    margin: auto;
+    text-align: center;
+}
+.h2{
+    color: #3fbcef;
+    background: black;
+}
