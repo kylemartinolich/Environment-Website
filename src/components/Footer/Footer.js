@@ -11,23 +11,6 @@ import Container from 'react-bootstrap/Container';
 const footer = (props) => (
     <div className={classes.Footer}>
         <h2 className ={classes.h2}><strong>Find out more!</strong></h2>
-{/*       <Form className="justify-content-center">
-    <Row>
-        <Col sm={2}>
-      <Form.Control placeholder="First name" />
-    </Col>
-    <Col sm={3}>
-      <Form.Control placeholder="Last name" />
-    </Col>
-  </Row>
-  <br/>
-  <Row><Col sm={5}>
-
-    <Form.Control type="email" placeholder="Enter email" />
-
-  </Col></Row>
-</Form> */}
-
 <Form onSubmit={sendEmail}>
   <Form.Row className="justify-content-md-center">
     <Col sm={2}>
@@ -71,10 +54,8 @@ const footer = (props) => (
 </div>
     </div>
 );
-
 function sendEmail(e) {
     e.preventDefault();
-
     emailjs.sendForm('service_g5wg4n6', 'template_o3itg1m', e.target, 'user_y0y03N8lgIFynSKHRp1s5')
       .then((result) => {
           console.log(result.text);
@@ -85,5 +66,4 @@ function sendEmail(e) {
       });
       e.target.reset()
   }
-
 export default footer;
