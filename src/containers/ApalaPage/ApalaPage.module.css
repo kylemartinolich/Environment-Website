@@ -153,9 +153,9 @@ body{
     margin: auto;
 }
 .text{
-    background-image: url("../../assets/Miscellaneous/leftpattern.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
-    background-position: left top, right top;
-    background-repeat: repeat-y, repeat-y;
+    background-image: url("../../assets/Miscellaneous/leftpattern.jpg"),url("../../assets/Miscellaneous/white-waves.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
+    background-position: left top, center top, right top;
+    background-repeat: repeat-y, repeat-y, repeat-y;
     background-color: white;
     padding-left:20%;
     padding-right:20%;
@@ -166,15 +166,23 @@ body{
 
 }
 .h2{
-    color: #ffffff;
-    text-shadow: 2px 2px #131313;
-    font-family: 'Heebo', sans-serif;
+    color:black;
+    text-align: left;
+     font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+     background-color:#3fbcef;
 }
 
-.p{
-    font-size: x-large;
-    font-family: 'Heebo', sans-serif;
+.pL{
+    font-size: medium;
+    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     margin-bottom:0px;
-    color: #ffffff;
-    text-shadow: 3px 3px #2c2c2c;
+    color:black;
+    text-align: left;
+}
+.pR{
+    font-size: medium;
+    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    margin-bottom:0px;
+    color:black;
+    text-align: right;
 }
