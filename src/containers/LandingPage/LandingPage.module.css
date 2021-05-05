@@ -1,16 +1,16 @@
 .mapContainer {
+    background-image: url("../../assets/Miscellaneous/leftpattern.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
+    background-position: left top, right top;
+    background-repeat: repeat-y, repeat-y;
+    background-color: white;
     height: 70%;
     padding-left: 20%;
     overflow: hidden;
     padding: 20px;
 }
-
-
-
 .map {
     width: 500px;
     height:600px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.349);
     margin-top: 50px;
 } 
 @media only screen and (max-width: 1200px) {
@@ -40,21 +40,16 @@
     transition: color 0.5s,  background 0.5s;
 }
 }
-
 html{
-    
     scroll-behavior: smooth;
     width:100%;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
 }
-
 body{
     overflow-x: hidden;
     padding-right:0px !important;
     background: #008a8a;
 }
-
 .showcase {
     background: url(../../assets/Rivers/HomePage_Chatta.jfif) no-repeat center center/cover;
     height: 96.7vh;
@@ -68,7 +63,6 @@ body{
   top: 0; bottom: 0;
   background: rgba(0,0,0,.38);
 }
-
 .showcasecontent {
     display: flex;
     flex-direction: column;
@@ -94,12 +88,10 @@ body{
     padding: 1rem 10rem;
     transition: color 0.5s,  background 0.5s;
 }
-
 .showcasecontent .btn:hover {
     background: #008a8a;
     color: #fff;
 }
-
 .btn {
     color: #008a8a;
     text-decoration: none;
@@ -112,22 +104,23 @@ body{
 .container {
     max-width: 1100px;
     margin: auto;
+    color: black;
 }
 .text{
-    background: #008a8a;
+    background-image: url("../../assets/Miscellaneous/leftpattern.jpg");
+    background-repeat: repeat-y;
+    background-color: white;
+    color: #000000;
     padding-left:20%;
     padding-right:20%;
     padding-top: 25px;
     margin:auto;
-    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.349);
-
 }
 p{
     margin-bottom:0px;
+    color: black;
 }
-
 .chevron {
-
   box-sizing: border-box;
   height: 5vw;
   width: 5vw;
@@ -139,24 +132,18 @@ p{
   position:absolute;
   bottom:15px;
 }
-
 .chevron:hover {
   border-bottom-width: 7px;
   border-right-width: 7px;
 }
-
 .chevronContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
-
- 
 @keyframes blinking-cursor {
   0% {
     opacity: 0;

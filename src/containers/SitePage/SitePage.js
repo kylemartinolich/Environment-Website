@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import Button from './components/Button/Button';
 import LandingPage from '.././LandingPage/LandingPage';
 import PagePicker from '../../components/PagePicker/PagePicker';
 import FlintPage from '../FlintPage/FlintPage';
@@ -18,8 +17,6 @@ class SitePage extends Component{
     state = {
         view: 'home'
     }
-
-    
     updateActivePage = (page) =>{
         this.setState({view: page});
     }
@@ -46,7 +43,6 @@ class SitePage extends Component{
             return (<LandingPage/>);
         }
     }
-
     render(){
         let currentPage = this.returnActivePage();
         return(    
