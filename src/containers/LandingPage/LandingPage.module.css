@@ -118,7 +118,8 @@ body{
 }
 p{
     margin-bottom:0px;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 .chevron {
   box-sizing: border-box;

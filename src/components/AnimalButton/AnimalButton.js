@@ -19,7 +19,7 @@ const animalButton = (props) => (<div>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>
+        <p className={classes.p}>
           {props.description}
         </p>
       </Modal.Body>

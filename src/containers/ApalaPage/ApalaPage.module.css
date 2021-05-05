@@ -65,18 +65,6 @@
   justify-content: center;
 
 }
-.plusButton{
-    height:35px;
-    width: 35px;
-    filter: invert(15%) sepia(87%) saturate(4576%) hue-rotate(353deg) brightness(100%) contrast(122%);
-    border-radius: 55px;
-    position: fixed;
-}
-.plusButton:hover{
-    transform: scale(1.2) rotate(90deg); 
-    transition: all .3s;
-    -webkit-transition: all .3s;
-}
 .showcase {
     height: auto;
     max-width: 100%;

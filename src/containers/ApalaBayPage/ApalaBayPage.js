@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import Button from './components/Button/Button';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import classes from './ApalaBayPage.module.css';
