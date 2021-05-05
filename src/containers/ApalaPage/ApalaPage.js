@@ -26,6 +26,11 @@ class ApalaPage extends Component{
         this.state = { windowWidth: window.innerWidth };
     }
 
+    state={
+        activeAnimal: null,
+        modalShow: false
+    }
+
     handleResize = (e) => {
         this.setState({ windowWidth: window.innerWidth });
     };
@@ -38,15 +43,9 @@ class ApalaPage extends Component{
         window.addEventListener("resize", this.handleResize);
     }
 
-
-
-    state={
-        modalShow: false
-    }
-
     showModalHandler = (handle)=>{
-        this.setState({showModal: !this.state.showModal});
-        console.log("Test");
+        this.setState({activeAnimal: handle, modalShow: !this.state.modalShow});
+        console.log(handle);
     }
 
     enterArea(area) {
@@ -73,20 +72,26 @@ let MAP = {
     { name: "Eastern Indigo Snake", shape: "circle", coords: [2277,667,172]},
     { name: "Torreya Tree", shape: "circle", coords: [435,655,170]},
     { name: "Gulf Sturgeon", shape: "circle", coords: [1672,961,179]},
-    { name: "Red Cockaded Woodpecker", shape: "circle", coords: [1672,298,173]},
+    { name: "Red-cockaded Woodpecker", shape: "circle", coords: [1672,298,173]},
     { name: "Fat Threeridge Mussel", shape: "circle", coords: [2456,1169,167]},
     { name: "Apalachicola Dusky Salamander", shape: "circle", coords: [2932,655,167]},
     { name: "Florida Black Bear", shape: "circle", coords: [1014,655,170]},
-    { name: "Oysters", shape: "circle", coords: [888,1137,171]}
+    { name: "Oysters (Crassostrea virginica)", shape: "circle", coords: [888,1137,171]}
     
   ]
+}
+var description;
+for(let i = 0; i < SpeciesData.apa.length; i++){
+    if(this.state.activeAnimal === SpeciesData.apa[i].name){
+        description = SpeciesData.apa[i].info;
+    }
 }
 
         return(
         <div>
             <div className="showcase">
             <ImageMapper src={apapic} map={MAP} width={windowWidth} imgWidth={3260}
-    	        onClick={area => this.clicked(area)}
+    	        onClick={area => this.showModalHandler(area.name)}
     	        onMouseEnter={area => this.enterArea(area)}
     	        onMouseLeave={area => this.leaveArea(area)}
                 />
@@ -134,7 +139,7 @@ let MAP = {
             </p>
             </div>
             <br></br>
-            <AnimalButton show={this.state.modalShow} onHide={() => this.setState({modalShow:false})} />
+            <AnimalButton show={this.state.modalShow} animal={this.state.activeAnimal} description={description} onHide={() => this.setState({modalShow:false})} />
             </div>
 </div>);
     }
