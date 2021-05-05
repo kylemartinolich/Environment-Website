@@ -1,9 +1,11 @@
 .Footer{
-    background: #008a8a;
+    /*background: #008a8a;*/
+    background: #3fbcef;
     width: 100%;
     position: relative;
 }
 .icons{
-    padding-top: 5px;
-    padding-bottom : 0px;
+    padding-top: 15px;
+    margin: auto;
+    text-align: center;
 }

@@ -1,6 +1,11 @@
 .navbar{
-    background-color: white;
+    background-color: #3fbcef;
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+.text{
+    color: white;
+    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
 }
