@@ -13,7 +13,7 @@ import Container from 'react-bootstrap/Container'
 
 const footer = (props) => (
     <div className={classes.Footer}>
-        <h2><strong>Find out more!</strong></h2>
+        <h2 className={classes.h2}><strong>Find out more!</strong></h2>
 {/*       <Form className="justify-content-center">
     <Row>
         <Col sm={2}>
