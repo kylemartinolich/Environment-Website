@@ -25,9 +25,14 @@ class ApalaBayPage extends Component{
         this.state = { windowWidth: window.innerWidth };
     }
 
+        state={
+        activeAnimal: null,
+        modalShow: false
+    }
+
     handleResize = (e) => {
         this.setState({ windowWidth: window.innerWidth });
-    };
+    }
 
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
@@ -37,13 +42,8 @@ class ApalaBayPage extends Component{
         window.addEventListener("resize", this.handleResize);
     }
 
-    state={
-        modalShow: false
-    }
-
     showModalHandler = (handle)=>{
-        this.setState({showModal: !this.state.showModal});
-        console.log("Test");
+        this.setState({activeAnimal: handle, modalShow: !this.state.modalShow});
     }
 
     enterArea(area) {
@@ -57,8 +57,7 @@ class ApalaBayPage extends Component{
     getTipPosition(area) {
         return { top: `${area.center[1]}px`, left: `${area.center[0]}px` };
     }
-
-
+ 
     render(){
         const { windowWidth } = this.state;
         /*return <div>Current window width: {windowWidth}</div>*/
@@ -67,15 +66,21 @@ class ApalaBayPage extends Component{
         let MAP = {
             name: "my-map",
             areas: [
-                { name: "Oysters", shape: "circle", coords: [1655,762,175] }
+                { name: "Oysters (Crassostrea virginica)", shape: "circle", coords: [1655,762,175] }
             ]
         }
+        var description;
+        for(let i = 0; i < SpeciesData.apa.length; i++){
+            if(this.state.activeAnimal === SpeciesData.apa[i].name){
+                description = SpeciesData.apa[i].info;
+            }
+        }  
 
         return(
         <div>
             <div className="showcase">
             <ImageMapper src={apaBaypic} map={MAP} width={windowWidth} imgWidth={3260}
-    	        onClick={area => this.clicked(area)}
+    	        onClick={area => this.showModalHandler(area.name)}
     	        onMouseEnter={area => this.enterArea(area)}
     	        onMouseLeave={area => this.leaveArea(area)}
                 />
@@ -133,6 +138,7 @@ class ApalaBayPage extends Component{
                 of Marine Fisheries management.
             </p>
             <br></br>
+            <AnimalButton show={this.state.modalShow} animal={this.state.activeAnimal} description={description} onHide={() => this.setState({modalShow:false})} />
             </div>
         </div>);
     }

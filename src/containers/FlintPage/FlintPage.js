@@ -24,6 +24,11 @@ class FlintPage extends Component{
         super(props);
         this.state = { windowWidth: window.innerWidth };
     }
+    
+    state={
+        activeAnimal: null,
+        modalShow: false
+    }
 
     handleResize = (e) => {
         this.setState({ windowWidth: window.innerWidth });
@@ -37,15 +42,8 @@ class FlintPage extends Component{
         window.addEventListener("resize", this.handleResize);
     }
 
-
-
-    state={
-        modalShow: false
-    }
-
     showModalHandler = (handle)=>{
-        this.setState({showModal: !this.state.showModal});
-        console.log("Test");
+        this.setState({activeAnimal: handle, modalShow: !this.state.modalShow});
     }
 
     enterArea(area) {
@@ -62,24 +60,31 @@ class FlintPage extends Component{
 
 
     render(){
-         const { windowWidth } = this.state;
+        const { windowWidth } = this.state;
         /*return <div>Current window width: {windowWidth}</div>*/
 
         let URL = {flintpic}
-let MAP = {
-  name: "my-map",
-  areas: [
-    { name: "Barbour’s Map Turtle", shape: "circle", coords: [793,983,167]},
-    { name: "Shoal Bass", shape: "circle", coords: [1693,1156,167]},
-    { name: "Mussels", shape: "circle", coords: [2587,989,172]},
-  ]
-}
+        let MAP = {
+        name: "my-map",
+        areas: [
+                { name: "Barbour’s Map Turtle", shape: "circle", coords: [793,983,167]},
+                { name: "Shoal Bass", shape: "circle", coords: [1693,1156,167]},
+                { name: "Mussels: Purple Bank Climber, Shiny-rayed Pocketbook, Gulf Moccasin Shell, Oval Pigtoe", shape: "circle", coords: [2587,989,172]},
+            ]
+        }
+
+        var description;
+        for(let i = 0; i < SpeciesData.flint.length; i++){
+            if(this.state.activeAnimal === SpeciesData.flint[i].name){
+                description = SpeciesData.flint[i].info;
+            }
+        }  
 
         return(
         <div>
              <div className="showcase">
             <ImageMapper src={flintpic} map={MAP} width={windowWidth} imgWidth={3260}
-    	        onClick={area => this.clicked(area)}
+    	        onClick={area => this.showModalHandler(area.name)}
     	        onMouseEnter={area => this.enterArea(area)}
     	        onMouseLeave={area => this.leaveArea(area)}
                 />
@@ -134,6 +139,7 @@ let MAP = {
             </p>
 
             <br></br>
+            <AnimalButton show={this.state.modalShow} animal={this.state.activeAnimal} description={description} onHide={() => this.setState({modalShow:false})} />
             </div>
 </div>);
     }

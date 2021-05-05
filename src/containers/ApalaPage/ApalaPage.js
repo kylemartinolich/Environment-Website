@@ -33,7 +33,7 @@ class ApalaPage extends Component{
 
     handleResize = (e) => {
         this.setState({ windowWidth: window.innerWidth });
-    };
+    }
 
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
@@ -45,7 +45,6 @@ class ApalaPage extends Component{
 
     showModalHandler = (handle)=>{
         this.setState({activeAnimal: handle, modalShow: !this.state.modalShow});
-        console.log(handle);
     }
 
     enterArea(area) {

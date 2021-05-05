@@ -25,6 +25,12 @@ class ChattaPage extends Component{
         this.state = { windowWidth: window.innerWidth };
     }
 
+    state={
+        activeAnimal: null,
+        modalShow: false
+    }
+
+
     handleResize = (e) => {
         this.setState({ windowWidth: window.innerWidth });
     };
@@ -37,19 +43,12 @@ class ChattaPage extends Component{
         window.addEventListener("resize", this.handleResize);
     }
 
-
-
-    state={
-        modalShow: false
-    }
-
     showModalHandler = (handle)=>{
-        this.setState({showModal: !this.state.showModal});
-        console.log("Test");
+        this.setState({activeAnimal: handle, modalShow: !this.state.modalShow});
     }
 
     enterArea(area) {
-    this.setState({ hoveredArea: area });
+        this.setState({ hoveredArea: area });
     }
 
     leaveArea(area) {
@@ -66,18 +65,24 @@ class ChattaPage extends Component{
         /*return <div>Current window width: {windowWidth}</div>*/
 
         let URL = {chattapic}
-let MAP = {
-  name: "my-map",
-  areas: [
-    { name: "Barbour’s Map Turtle", shape: "circle", coords: [1943,995,165]},
-    { name: "Mussels", shape: "circle", coords: [1348,983,170]},  
-  ]
-}
+        let MAP = {
+        name: "my-map",
+        areas: [
+                { name: "Barbour’s Map Turtle", shape: "circle", coords: [1943,995,165]},
+                { name: "Mussels: Purple Bank Climber, Shiny-rayed Pocketbook, Gulf Moccasin Shell, Oval Pigtoe", shape: "circle", coords: [1348,983,170]},  
+            ]
+        }
+        var description;
+            for(let i = 0; i < SpeciesData.chatta.length; i++){
+                if(this.state.activeAnimal === SpeciesData.chatta[i].name){
+                    description = SpeciesData.chatta[i].info;
+                }
+            }  
         return(
         <div>
             <div className="showcase">
             <ImageMapper src={chattapic} map={MAP} width={windowWidth} imgWidth={3260}
-    	        onClick={area => this.clicked(area)}
+    	        onClick={area => this.showModalHandler(area.name)}
     	        onMouseEnter={area => this.enterArea(area)}
     	        onMouseLeave={area => this.leaveArea(area)}
                 />
@@ -116,6 +121,7 @@ let MAP = {
                 that flow through a major urban area (other: Bow River, Canada).
             </p>
             <br></br>
+            <AnimalButton show={this.state.modalShow} animal={this.state.activeAnimal} description={description} onHide={() => this.setState({modalShow:false})} />
             </div>
         </div>);
     }
