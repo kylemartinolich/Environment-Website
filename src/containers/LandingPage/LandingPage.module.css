@@ -1,7 +1,8 @@
 
 .mapContainer {
-     background-image: url("../../assets/Miscellaneous/leftpattern.jpg");
-     background-repeat: repeat-y;
+     background-image: url("../../assets/Miscellaneous/leftpattern.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
+    background-position: left top, right top;
+     background-repeat: repeat-y, repeat-y;
    background-color: white;
     height: 70%;
     padding-left: 20%;
