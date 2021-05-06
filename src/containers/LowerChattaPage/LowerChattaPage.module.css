@@ -87,35 +87,40 @@ body{
 .h2{
     color:black;
     text-align: left;
-     font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+     font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
      background-color:#3fbcef;
 }
 .pL{
     font-size: large;
-    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     margin-bottom:0px;
     color:black;
     text-align: left;
 }
 .pR{
     font-size: large;
-    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     margin-bottom:0px;
     color:black;
     text-align: right;
 }
 .titles{
+    text-align: left;
     font-weight: bold;
+    font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     color: black;
     font-size: xx-large;
-    border-bottom: 3px solid white;
     padding-left: 10px;
-    padding-right: 10px;
-    
+    padding-right: 10px;   
+}
+.heading{
+    border-bottom: 3px solid #3fbcef;
 }
 .states{
-    border: 2px solid black;
     padding: 25px;
+}
+.imgbreak{
+    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
 }
 .important{
     color: black;

@@ -67,9 +67,16 @@ class LowerChattaPage extends Component{
                         </Row>
             <br/>
             <div className={classes.states}>
-            <p>
-                 <span className={classes.titles}>Georgia</span>  
+                <Row>
+                            <Col  className={classes.heading} md="8">
+                 <span className={classes.titles}>Georgia</span> </Col>
+                 <Col></Col>
+                        </Row> 
                 <br/><br/>
+            <Row>
+                            <Col></Col>
+                            <Col md="10">
+                        <p className={classes.pR}>
                 As the upstream user, Georgia wants to have enough water to continue growing, 
                 particularly in booming metro Atlanta where much of these river systems originate, in addition 
                 to supplying cities such as Columbus and heavy agricultural usage in the state’s southwest corner. 
@@ -77,23 +84,44 @@ class LowerChattaPage extends Component{
                 the tops of multiple river systems that drain into both the Atlantic Ocean and Gulf of Mexico.
             </p>
             <br/>
-            <p>
+             </Col>
+                        </Row>
                 <br/>
-                <span className={classes.titles}>Alabama</span>  
+                <Row>
+                    <Col></Col>
+                            <Col  className={classes.heading} md="8">
+                 <span className={classes.titles}>Alabama</span>  </Col>
+                 </Row>
                 <br/><br/>
+                <Row>
+                            <Col md="10">
+                        <p className={classes.pL}>
                 Alabama is concerned that Atlanta’s ever-increasing thirst for water will severely limit its own 
                 use of water for power generation, municipal supply, fisheries and other current and future needs.
             </p>
+            </Col>
+            <Col></Col>
+            </Row>            
             <br/>
-            <p>
-                <br/>
-                <span className={classes.titles}>Florida</span>  
+            <br/>
+                 <Row>
+                            <Col  className={classes.heading} md="8">
+                 <span className={classes.titles}>Florida</span> </Col>
+                 <Col></Col>
+                        </Row>  
                 <br/><br/>
+                 <Row>
+                     <Col></Col>
+                            <Col md="10">
+                        <p className={classes.pR}>
                 Florida wants enough freshwater to reach the Apalachicola Bay to sustain its multi-million dollar 
                 shellfish industry, which is under severe ecological stress resulting from low river flows and 
                 saltwater intrusion.
-            </p>
+                </p>
+                </Col>
+                </Row>
             </div>
+            <div className={classes.imgbreak}></div>
             <br></br>
             
             <p>
@@ -160,13 +188,3 @@ class LowerChattaPage extends Component{
     }
 }
 export default LowerChattaPage;
-/*<Jumbotron>
-            <h1>Hello, Lower Chattahoochee!</h1>
-            <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
-            </p>
-            <p>
-                <Button variant="primary">Learn more</Button>
-            </p>
-            </Jumbotron>*/
