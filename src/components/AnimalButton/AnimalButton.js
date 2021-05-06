@@ -40,7 +40,7 @@ const animalButton = (props) => (<div>
                 </Col>
                 <Col>
                     <p>
-                    {props.piclink}
+                    <Image src={apaPics[0]} fluid />
                     </p>
                 </Col>
             </Row>
