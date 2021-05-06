@@ -67,7 +67,7 @@ var description;
 var piclink;
 for(let i = 0; i < SpeciesData.apa.length; i++){
     if(this.state.activeAnimal === SpeciesData.apa[i].name){
-        description = SpeciesData.apa[i].info;
+        description = SpeciesData.apa[i].info
         piclink = i;
     }
 }
