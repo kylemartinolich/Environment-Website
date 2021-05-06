@@ -106,7 +106,7 @@ body{
 }
 .titles{
     font-weight: bold;
-    color: whitesmoke;
+    color: black;
     font-size: xx-large;
     border-bottom: 3px solid white;
     padding-left: 10px;
@@ -114,7 +114,7 @@ body{
     
 }
 .states{
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 25px;
 }
 .important{
