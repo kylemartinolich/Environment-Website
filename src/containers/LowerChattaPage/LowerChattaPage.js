@@ -6,7 +6,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import jumbopic from '../../assets/Rivers/lakelanier.jpg'
+import jumbopic from '../../assets/Rivers/lake_lanier.jpg'
 
 
 const renderTooltip = (props) => (
@@ -37,14 +37,13 @@ constructor(props) {
         return(
         <div>
             <Row>
-             <Jumbotron>
+             <Jumbotron className={classes.jumbo} fluid>
                     <div>
                          <img src={jumbopic} width={windowWidth} imgWidth={1920}/>
                     </div>
                 </Jumbotron>
                 </Row>
-                <div className={classes.showcasecontent}>
-                </div>
+                
             <div className={classes.text}>
             <div className={classes.info}>
                         <Row>
