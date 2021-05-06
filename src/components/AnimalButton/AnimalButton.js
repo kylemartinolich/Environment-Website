@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SpeciesData from '../../speciesdata.json';
+import Image from 'react-bootstrap/Image';
 import Eastern_Indigo_Snake from '../../assets/Species/Eastern_Indigo_Snake.jpg';
 import Red_Cockaded_Woodpecker from '../../assets/Species/Red_cockaded_woodpecker.jpg';
 import Florida_Black_Bear from '../../assets/Species/A_Florida_Black_Bear.jpg';
@@ -17,8 +18,6 @@ import Oysters from '../../assets/Species/Crassostrea_virginica.jpg';
 import Barbours_Map_Turtle from '../../assets/Species/Barbours_Map_Turtle_kame.jpg';
 import Mussels from '../../assets/Species/mussels.png';
 import Shoal_Bass from '../../assets/Species/Shoal_Bass.png';
-let apaPics = [EastSnake, RedWoodpecker, FloridaBear, DuskySalamander, TorreyaTree, FatMussel, GulfSturgeon, Oysters];
-let apaName = ["Eastern Indigo Snake", "Red Cockaded Woodpecker", "Florida Black Bear", "Dusky Salamander", "Torreya Tree", "Fat Threeridge Mussel", "Gulf Sturgeon", "Oysters"];
 const animalButton = (props) => (<div>
     <Modal className={classes.text}
       {...props}
