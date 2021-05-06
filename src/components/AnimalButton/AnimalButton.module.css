@@ -1,20 +1,26 @@
-.plusButton{
-    height:35px;
-    width: 35px;
-    filter: invert(15%) sepia(57%) saturate(4576%) hue-rotate(353deg) brightness(93%) contrast(122%);
-    border-radius: 55px;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+.text{
+     font-size: large;
+    font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    margin-bottom:0px;
+    color:black;
 }
-
-.plusButton:hover{
-    transform: scale(1.2) rotate(90deg); 
-    
-    transition: all .3s;
-    -webkit-transition: all .3s;
-
+.heading{
+    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
+    border-bottom: 3px solid #3fbcef;
 }
-body{
-    padding-right: 0px !important;
+.border{
+    border-top: none;
+    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
 }
 .p{
-    color: black;
+     background-image: url("../../assets/Miscellaneous/leftpattern.jpg"),url("../../assets/Miscellaneous/white-waves.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
+    background-position: left top, center top, right top;
+    background-repeat: repeat-y, repeat-y, repeat-y;
+    background-color: white;
+    margin:auto;
+}
+.body{
+    background: no-repeat center center/cover;
+    color: #FFF;
 }
