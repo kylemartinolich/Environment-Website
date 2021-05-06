@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './ChattaPage.module.css';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import AnimalButton from '../../components/AnimalButton/AnimalButton';
-import Tooltip from 'react-bootstrap/Tooltip';
 import AccordionPage from '../../components/Accordion/Accordion';
 import SpeciesData from '../../speciesdata.json';
 import chattapic from '../../assets/Rivers/chattahoochee.jpg';
@@ -11,11 +9,6 @@ import ImageMapper from 'react-image-mapper';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const renderTooltip = (props) => (
-  <Tooltip id="button-tooltip" {...props}>
-     Walton on Chattahoochee, Georgia © Thomson200
-  </Tooltip>
-);
 class ChattaPage extends Component{
     constructor(props) {
         super(props);

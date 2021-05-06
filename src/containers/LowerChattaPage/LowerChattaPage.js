@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './LowerChattaPage.module.css';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import jumbopic from '../../assets/Rivers/lake_lanier.jpg'
-
-const renderTooltip = (props) => (
-  <Tooltip id="button-tooltip" {...props}>
-     Columbus, Georgia skyline © Thechased
-  </Tooltip>
-);
 
 class LowerChattaPage extends Component{
 constructor(props) {

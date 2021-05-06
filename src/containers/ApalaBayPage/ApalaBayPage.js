@@ -1,21 +1,14 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './ApalaBayPage.module.css';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import AccordionPage from '../../components/Accordion/Accordion';
 import AnimalButton from '../../components/AnimalButton/AnimalButton';
-import Tooltip from 'react-bootstrap/Tooltip';
 import SpeciesData from '../../speciesdata.json';
 import apaBaypic from '../../assets/Rivers/apabay.jpg';
 import ImageMapper from 'react-image-mapper';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const renderTooltip = (props) => (
-  <Tooltip id="button-tooltip" {...props}>
-     Lake Wimico, Florida © Kierstyn Cox/TNC
-  </Tooltip>
-);
 class ApalaBayPage extends Component{
     constructor(props) {
         super(props);

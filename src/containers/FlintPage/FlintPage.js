@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './FlintPage.module.css';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import AccordionPage from '../../components/Accordion/Accordion';
 import AnimalButton from '../../components/AnimalButton/AnimalButton';
 import SpeciesData from '../../speciesdata.json';
@@ -11,11 +9,6 @@ import ImageMapper from 'react-image-mapper';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const renderTooltip = (props) => (
-  <Tooltip id="button-tooltip" {...props}>
-     Bridge over Flint River, Georgia © Michael Rivera
-  </Tooltip>
-);
 class FlintPage extends Component{
      constructor(props) {
         super(props);

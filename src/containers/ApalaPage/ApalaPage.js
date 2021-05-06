@@ -4,18 +4,11 @@ import classes from './ApalaPage.module.css';
 import AccordionPage from '../../components/Accordion/Accordion';
 import SpeciesData from '../../speciesdata.json';
 import AnimalButton from '../../components/AnimalButton/AnimalButton';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import apapic from '../../assets/Rivers/apalachicola.jpg';
 import ImageMapper from 'react-image-mapper';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const renderTooltip = (props) => (
-  <Tooltip id="button-tooltip" {...props}>
-     Apalachicola River, Georgia © Ebyabe
-  </Tooltip>
-);
 class ApalaPage extends Component{
     constructor(props) {
         super(props);
