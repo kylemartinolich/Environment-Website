@@ -112,3 +112,9 @@ Go to src/components/Footer/Footer.js. Lines 34(Facebook), 39(Twitter), and 44(I
         Chattahoochee_watershed.png     ACF Projection © Chattahoochee River Keeper
         Flint_watershed.png             ACF Projection © Chattahoochee River Keeper
         chattahoochee.png               ACF Projection © Chattahoochee River Keeper
+    #Footer
+        Facebook SVG        https://icons.getbootstrap.com/icons/facebook/
+        Twitter SVG         https://icons.getbootstrap.com/icons/twitter/
+        Instagram           https://icons.getbootstrap.com/icons/instagram/
+    # Code used on pages to resize images according to window screen
+        https://www.jsdiaries.com/how-to-get-the-width-of-the-window-in-react-js/
