@@ -26,10 +26,14 @@
     transition: color 0.5s,  background 0.5s;
 }
 }
-
 body{
     overflow-x: hidden;
     padding-right:0px !important;
+}
+.showcase {
+    height: auto;
+    max-width: 100%;
+    width: auto;
 }
 .showcasecontent {
     display: flex;
@@ -140,7 +144,4 @@ body{
     font-size: 2rem;
     padding: 1.5rem;
     font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
-}
-.jumbo{
-    background-image:  url("../../assets/Rivers/lakelanier.jpg");
 }
