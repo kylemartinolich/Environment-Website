@@ -14,8 +14,8 @@ const animalButton = (props) => (<div>
           {props.animal}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className={classes.p}>
-                    <p>
+      <Modal.Body>
+                    <p className={classes.p}>
                         {props.description}
                         </p>
       </Modal.Body>
