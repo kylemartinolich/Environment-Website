@@ -14,10 +14,10 @@ const animalButton = (props) => (<div>
           {props.animal}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-                    <p className={classes.p}>
+      <Modal.Body className={classes.p}>
+                    
                         {props.description}
-                        </p>
+                       
       </Modal.Body>
       <Modal.Footer className={classes.border}>
         <Button onClick={props.onHide}>Close</Button>
