@@ -37,7 +37,7 @@ const animalButton = (props) => (<div>
                         {props.description}
                     </p>
                 </Col>
-                <Col style={{ backgroundImage: `url({props.piclink})` }}>
+                <Col style={{ backgroundImage: `url({"'" + props.piclink + "'"})` }}className={classes.body}>
                 </Col>
             </Row>
       </Modal.Body>
