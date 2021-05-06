@@ -5,6 +5,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 
 const renderTooltip = (props) => (
@@ -17,8 +18,13 @@ class LowerChattaPage extends Component{
 
     render(){
         return(
+
         <div>
-            
+                    <div>
+            <jumbotron fluid>
+                
+            </jumbotron>
+        </div>
             <header className={classes.showcase}>
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
@@ -66,6 +72,9 @@ class LowerChattaPage extends Component{
             </Col>
                         </Row>
             <br/>
+               <div fluid className={classes.imgbreak}> <Row>
+    <Col></Col>
+  </Row></div>
             <div className={classes.states}>
                 <Row>
                             <Col  className={classes.heading} md="8">
@@ -121,24 +130,27 @@ class LowerChattaPage extends Component{
                 </Col>
                 </Row>
             </div>
-            <div className={classes.imgbreak}></div>
+            <div fluid className={classes.imgbreak}> <Row>
+    <Col></Col>
+  </Row></div>
             <br></br>
-            
-            <p>
+            <Row>
+                            <Col md="10">
+                        <p className={classes.pL}>
                 In the mid-1900s, the U.S. Army Corps of Engineers built Buford Dam on the Chattahoochee River, 
                 creating Lake Lanier. The authorized purpose of the lake was to provide flood control, hydropower 
                 and navigation. Lake Allatoona, a Corps lake on the Etowah River northwest of Atlanta (ACT basin), 
                 was authorized for similar purposes.
             </p>
             <br/>
-            <p>
+            <p className={classes.pL}>
                 The booming population of metro Atlanta began to rely on Lakes Lanier and Allatoona for its water 
                 supply, and the Corps began issuing contracts to municipal water-supply providers without any 
                 evaluation under the National Environmental Policy Act (NEPA). In 1989, the Corps recommended 
                 that some of the lakes’ water be reallocated for water supply in the Atlanta region.
             </p>
             <br/>
-            <p>
+            <p className={classes.pL}>
                 In response, Alabama sued the Corps, claiming that reallocating the water in Lake Allatoona would 
                 favor Georgia's interests and that the Corps had violated NEPA by ignoring the environmental impacts 
                 on the downstream states. Alabama also claimed that the Corps breached its duty to operate Lake Lanier 
@@ -147,12 +159,18 @@ class LowerChattaPage extends Component{
                 intervened or initiated their own lawsuits claiming that the Corps was not doing its part to allow 
                 the lakes to be used for current and future water supply.
             </p>
+            </Col>
+            <Col></Col>
+            </Row>      
             <br/>
             <p className={classes.important}>
                 Georgia, Florida and Alabama have been fighting over water in the ACF for more than three decades.
             </p>
             <br/>
-            <p>
+            <Row>
+                     <Col></Col>
+                            <Col md="10">
+                        <p className={classes.pR}>
                 Florida sued Georgia over its behavior during a multi-year drought, which Florida alleges led to the 
                 ecological collapse of the Apalachicola Bay in 2013 and its iconic oyster industry, which once 
                 produced 10% of the country’s oysters. The mollusks rely on a delicate balance of freshwater from 
@@ -160,20 +178,26 @@ class LowerChattaPage extends Component{
                 the bay’s salinity increased, which allowed oysters’ predators to thrive and disease bacteria to proliferate.
             </p>
             <br/>
-            <p>
+            <p className={classes.pR}>
                Florida blames Georgia for the using up too much water upstream, particularly farmers in southwest Georgia. 
             </p>
             <br/>
-            <p>
+            <p className={classes.pR}>
                 Florida is asking the Supreme Court to impose water usage limits on Georgia, particularly during drought 
                 years, so more freshwater from the ACF can flow to Apalachicola.
             </p>
+             </Col>
+                </Row>
             <br/>
             <div className={classes.states}>
-            <p>
                 <br/>
-                <span className={classes.titles}>Update</span>  
+                 <Row>
+                            <Col  className={classes.heading} md="12">
+                 <span className={classes.titles}>Update</span> </Col>
+                 <Col></Col>
+                        </Row>   
                 <br/><br/>
+                <p className={classes.pC}>
                 Florida wants enough freshwater to reach the Apalachicola Bay to sustain its multi-million dollar 
                 shellfish industry, which is under severe ecological stress resulting from low river flows and 
                 saltwater intrusion.
