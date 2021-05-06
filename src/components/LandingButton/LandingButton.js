@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import classes from './LandingButton.module.css';
 import Chattahoochee_watershed from '../../assets/Chattahoochee_watershed.png';
-import UpperChattahoochee_watershed from '../../assets/UpperChattahoochee_watershed.png';
-import LowerChattahoochee_watershed from '../../assets/LowerChattahoochee_watershed.png';
 import Flint_watershed from '../../assets/Flint_watershed.png';
 import Apalachicola_watershed from '../../assets/Apalachicola_watershed.png';
 import ApalachicolaBay_watershed from '../../assets/ApalachicolaBay_watershed.png';
 import Flint_River from '../../assets/Rivers/Flint_River.png';
 import UpperChattahoochee_River from '../../assets/Rivers/UpperChatta.jpg';
-import LowerChattahoochee_River from '../../assets/Rivers/LowerChatta.jpeg';
 import Apalachicola_River from '../../assets/Rivers/Apalachicola_River.jfif';
 import Apalachicola_Bay from '../../assets/Rivers/Apalachicola_Bay.png';
 import chattahoochee from '../../assets/chattahoochee.png';
