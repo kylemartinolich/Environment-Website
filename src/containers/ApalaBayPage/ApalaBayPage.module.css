@@ -124,21 +124,21 @@
     margin:auto;
 }
 .h2{
-    color: white;
+    color: black;
     text-align: left;
-    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    font-family:  "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
 }
 .pL{
     font-size: large;
-    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    font-family:  "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     margin-bottom:0px;
     color:black;
     text-align: left;
 }
 .pR{
     font-size: large;
-    font-family: "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
+    font-family:  "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     margin-bottom:0px;
     color:black;
     text-align: right;
