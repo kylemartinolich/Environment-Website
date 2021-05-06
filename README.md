@@ -68,3 +68,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Adding Links to SVG Social Media Icons
+
+Go to src/components/Footer/Footer.js. Lines 34(Facebook), 39(Twitter), and 44(Instagram) have the code 'href="#"'. Replace the # with the corresponding social media link.
+
+## Copyright information
+    # Assets
+        #Miscellaneous
+            leftpattern.jpg  Takeshi Ishikawa   https://www.vecteezy.com/vector-art/376799-japanese-traditional-seamless-pattern
+            rightpattern.jpg Takeshi Ishikawa   https://www.vecteezy.com/vector-art/376799-japanese-traditional-seamless-pattern
+            wavebreaker.jpg  Takeshi Ishikawa   https://www.vecteezy.com/vector-art/680116-set-of-seamless-wave-patterns
+            white-waves.jpg  Stas Pimenov       https://www.toptal.com/designers/subtlepatterns/white-waves-pattern/
+        #Rivers
+            apabay.jpg              Lake Wimico, Florida © Kierstyn Cox/TNC
+            Apalachicola_Bay.png    Lake Wimico, Florida © Kierstyn Cox/TNC
+            Apalachicola_River.jfif  Apalachicola River, Georgia © Ebyabe
+            apalachicola.jpg         Apalachicola River, Georgia © Ebyabe
+            chattahoochee.jpg       Walton on Chattahoochee, Georgia © Thomson200
+            UpperChatta.jpg         Walton on Chattahoochee, Georgia © Thomson200
+            Flint_River.png         Bridge over Flint River, Georgia © Michael Rivera
+            flint.jpg               Bridge over Flint River, Georgia © Michael Rivera
+            HomePage_Chatta.jfif     Chattahoochee River, Georgia © Keizers
+            lake_lanier.jpg         Lake Lanier, Georgia © ChanhNguyen
+        #Species
+            A_Florida_Black_Bear.jpg         https://en.wikipedia.org/wiki/Florida_black_bear#/media/File:A_Florida_Black_Bear.jpg
+            Barbours_Map_Turtle_kame.jpg     https://commons.wikimedia.org/wiki/File:Barbour%27s_Map_Turtle_kame.jpg
+            Crassostrea_virginica.jpg        https://www.fisheries.noaa.gov/species/eastern-oyster#overview
+            Eastern_Indigo_Snake.jpg         https://commons.wikimedia.org/wiki/File:Eastern_Indigo_Snake.jpg
+            Fat_Threeridge_Mussel.jpg        https://en.wikipedia.org/wiki/Amblema_neislerii#/media/File:Amblema_neislerii_First_Cut-_Other_Side_(5544613600).jpg
+            mussels.png (collage of following photos)
+                oysters.jpg                  https://www.facebook.com/FWCResearch/photos/a.611845082164895/2948029968546383/
+                Hamiota_subangulata.jpg      https://en.wikipedia.org/wiki/Shinyrayed_pocketbook#/media/File:Hamiota_subangulata.jpg
+                Medionidus_penicillatus.jpg  https://commons.wikimedia.org/wiki/File:Medionidus_penicillatus.jpg
+                Pleurobema_pyriforme.jpg     https://commons.wikimedia.org/wiki/File:Pleurobema_pyriforme.jpg
+            Red_cockaded_woodpecker.jpg      https://www.flickr.com/photos/usfwssoutheast/7420114118
+            salamander.jpeg                  https://www.inaturalist.org/photos/28094999
+            Shoal_Bass.png                   https://upload.wikimedia.org/wikipedia/commons/8/84/Shoal_Bass_%28Micropterus_Cataractae%29_Flint_River%2C_GA.png
+            sturgeon.jpg                     https://www.fisheries.noaa.gov/species/gulf-sturgeon#science
+            Torreya_taxifolia_foliage.jpg    https://commons.wikimedia.org/wiki/Category:Torreya_taxifolia#/media/File:Torreya_taxifolia_foliage.jpg
+        Apalachicola_watershed.png      ACF Projection © Chattahoochee River Keeper
+        ApalachicolaBay_watershed.png   ACF Projection © Chattahoochee River Keeper
+        Chattahoochee_watershed.png     ACF Projection © Chattahoochee River Keeper
+        Flint_watershed.png             ACF Projection © Chattahoochee River Keeper
+        chattahoochee.png               ACF Projection © Chattahoochee River Keeper
