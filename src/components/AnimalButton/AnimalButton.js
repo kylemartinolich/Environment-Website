@@ -5,6 +5,20 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import SpeciesData from '../../speciesdata.json';
+import Eastern_Indigo_Snake from '../../assets/Species/Eastern_Indigo_Snake.jpg';
+import Red_Cockaded_Woodpecker from '../../assets/Species/Red_cockaded_woodpecker.jpg';
+import Florida_Black_Bear from '../../assets/Species/A_Florida_Black_Bear.jpg';
+import Dusky_Salamander from '../../assets/Species/salamander.jpeg';
+import Torreya_Tree from '../../assets/Species/Torreya_taxifolia_foliage.jpg';
+import Fat_Threeridge_Mussel from '../../assets/Species/Fat_Threeridge_Mussel.jpg';
+import Gulf_Sturgeon from '../../assets/Species/sturgeon.jpg';
+import Oysters from '../../assets/Species/Crassostrea_virginica.jpg';
+import Barbours_Map_Turtle from '../../assets/Species/Barbours_Map_Turtle_kame.jpg';
+import Mussels from '../../assets/Species/mussels.png';
+import Shoal_Bass from '../../assets/Species/Shoal_Bass.png';
+let apaPics = [EastSnake, RedWoodpecker, FloridaBear, DuskySalamander, TorreyaTree, FatMussel, GulfSturgeon, Oysters];
+let apaName = ["Eastern Indigo Snake", "Red Cockaded Woodpecker", "Florida Black Bear", "Dusky Salamander", "Torreya Tree", "Fat Threeridge Mussel", "Gulf Sturgeon", "Oysters"];
 const animalButton = (props) => (<div>
     <Modal className={classes.text}
       {...props}
@@ -18,9 +32,16 @@ const animalButton = (props) => (<div>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className={classes.p}>
-        <p>
-          {props.description}
-        </p>
+            <Row>
+                <Col>
+                    <p>
+                        {props.description}
+                    </p>
+                </Col>
+                <Col>
+                    <Image src={props.pic} rounded />
+                </Col>
+            </Row>
       </Modal.Body>
       <Modal.Footer className={classes.border}>
         <Button onClick={props.onHide}>Close</Button>

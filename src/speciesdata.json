@@ -1,8 +1,9 @@
 {
 	"apa": [{
 			"name": "Eastern Indigo Snake",
-			"info": "The longest snake native to the United States, the eastern indigo grows 9 feet long, sleek as a stair banister, with conspicuous black-blue scales. Its non-venomous, docile even when cornered and, at least as far as its diet goes, fond of its fellow snakes, particularly the venomous kind. A daytime hunter, it was once a common sight throughout Florida, Georgia, southern Alabama and southeastern Mississippi. By 1978, however, its numbers had so declined it was one of the earliest entries on the list of protected wildlife under the Federal Endangered Species Act, victim to human antipathy, cars and the steady degradation of its habitat."
-		},
+			"info": "The longest snake native to the United States, the eastern indigo grows 9 feet long, sleek as a stair banister, with conspicuous black-blue scales. Its non-venomous, docile even when cornered and, at least as far as its diet goes, fond of its fellow snakes, particularly the venomous kind. A daytime hunter, it was once a common sight throughout Florida, Georgia, southern Alabama and southeastern Mississippi. By 1978, however, its numbers had so declined it was one of the earliest entries on the list of protected wildlife under the Federal Endangered Species Act, victim to human antipathy, cars and the steady degradation of its habitat.",
+            "pic": "../../assets/Species/Eastern_Indigo_Snake.jpg"
+        },
 		{
 			"name": "Red-cockaded Woodpecker",
 			"info": "Once fairly common in the southeastern United States, this bird is now rare, local, and considered an endangered species. It requires precise conditions within mature pine forest, a habitat that is now scarce. Lives in isolated clans, each clan an extended family group, with one pair of adults assisted in their nesting by up to four additional birds. The red cockade for which the bird is named, a small patch of feathers behind the eye of the male, is usually hard to see in the field."

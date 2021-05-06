@@ -18,9 +18,5 @@
     background-position: left top, center top, right top;
     background-repeat: repeat-y, repeat-y, repeat-y;
     background-color: white;
-    padding-left:20%;
-    padding-right:20%;
-    padding-top: 25px;
-    padding-bottom: 20px;
     margin:auto;
 }
