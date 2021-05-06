@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
 import classes from './ChattaPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import AnimalButton from '../../components/AnimalButton/AnimalButton';
@@ -49,7 +48,6 @@ class ChattaPage extends Component{
     }
     render(){
         const { windowWidth } = this.state;
-        let URL = {chattapic}
         let MAP = {
         name: "my-map",
         areas: [

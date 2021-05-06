@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
 import classes from './FlintPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -49,7 +48,6 @@ class FlintPage extends Component{
     }
     render(){
         const { windowWidth } = this.state;
-        let URL = {flintpic}
         let MAP = {
         name: "my-map",
         areas: [

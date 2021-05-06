@@ -10,7 +10,6 @@ import ApalaBayPage from '../ApalaBayPage/ApalaBayPage';
 import Footer from '../../components/Footer/Footer';
 import Auxillary from '../../hoc/Auxillary';
 import classes from './SitePage.module.css';
-import { Dropdown } from 'react-bootstrap';
 import { DropdownButton } from 'react-bootstrap';
 
 class SitePage extends Component{

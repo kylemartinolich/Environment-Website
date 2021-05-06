@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
 import classes from './ApalaBayPage.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import AccordionPage from '../../components/Accordion/Accordion';
@@ -49,7 +48,6 @@ class ApalaBayPage extends Component{
     }
     render(){
         const { windowWidth } = this.state;
-        let URL = { apaBaypic }
         let MAP = {
             name: "my-map",
             areas: [

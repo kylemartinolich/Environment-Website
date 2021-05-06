@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com';
-import Toast from 'react-bootstrap/Toast';
+//import Toast from 'react-bootstrap/Toast';
 import classes from './Footer.module.css';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';

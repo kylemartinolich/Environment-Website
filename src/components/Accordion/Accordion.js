@@ -31,7 +31,7 @@ let acord = [];
 class AccordionPage extends Component{
     render(){
         acord = [];
-            if(this.props.animalList == SpeciesData.apa){
+            if(this.props.animalList === SpeciesData.apa){
                 for(let i = 0; i < SpeciesData.apa.length; i++){
                     acord.push(
                         <Accordion defaultActiveKey="0">
@@ -49,7 +49,7 @@ class AccordionPage extends Component{
                             
             }
         }
-            if(this.props.animalList == SpeciesData.chatta){
+            if(this.props.animalList === SpeciesData.chatta){
                 for(let i = 0; i < SpeciesData.chatta.length; i++){
                     acord.push(
                         <Accordion defaultActiveKey="0">
@@ -67,7 +67,7 @@ class AccordionPage extends Component{
                             
             }
         }
-        if(this.props.animalList == SpeciesData.flint){
+        if(this.props.animalList === SpeciesData.flint){
                 for(let i = 0; i < SpeciesData.flint.length; i++){
                     acord.push(
                         <Accordion defaultActiveKey="0">
@@ -85,7 +85,7 @@ class AccordionPage extends Component{
                             
             }
         }
-        if(this.props.animalList == SpeciesData.apaBay){
+        if(this.props.animalList === SpeciesData.apaBay){
                 for(let i = 0; i < SpeciesData.apaBay.length; i++){
                     acord.push(
                         <Accordion defaultActiveKey="0">

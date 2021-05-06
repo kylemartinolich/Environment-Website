@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
 import classes from './ApalaPage.module.css';
 import AccordionPage from '../../components/Accordion/Accordion';
 import SpeciesData from '../../speciesdata.json';
@@ -49,7 +48,6 @@ class ApalaPage extends Component{
     }
     render(){
         const { windowWidth } = this.state;
-        let URL = {apapic}
 let MAP = {
   name: "my-map",
   areas: [
