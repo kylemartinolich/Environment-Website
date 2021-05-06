@@ -35,7 +35,7 @@ class LandingPage extends Component {
                             <h1 className={classes.Title}>
                                 Learn more about: <br></br><ReactRotatingText className='react-rotating-text-cursor' items={['Chattahoochee', 'Apalachicola', 'Flint']} />
                             </h1>
-                            <p>
+                            <p className={classes.subheader}>
                                 Click the arrow down below to get started!
                             </p>
                             <br></br>
