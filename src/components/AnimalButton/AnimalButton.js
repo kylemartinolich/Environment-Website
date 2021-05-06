@@ -18,6 +18,7 @@ import Oysters from '../../assets/Species/Crassostrea_virginica.jpg';
 import Barbours_Map_Turtle from '../../assets/Species/Barbours_Map_Turtle_kame.jpg';
 import Mussels from '../../assets/Species/mussels.png';
 import Shoal_Bass from '../../assets/Species/Shoal_Bass.png';
+let apaPics = [Eastern_Indigo_Snake, Red_Cockaded_Woodpecker, Florida_Black_Bear, Dusky_Salamander, Torreya_Tree, Fat_Threeridge_Mussel, Gulf_Sturgeon, Oysters];
 const animalButton = (props) => (<div>
     <Modal className={classes.text}
       {...props}
@@ -38,7 +39,7 @@ const animalButton = (props) => (<div>
                     </p>
                 </Col>
                 <Col>
-                    <Image src={props.piclink} rounded />
+                    <Image src={apaPics[props.piclink]} rounded />
                 </Col>
             </Row>
       </Modal.Body>
