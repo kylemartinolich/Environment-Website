@@ -25,7 +25,6 @@ class LowerChattaPage extends Component{
                 <div className={classes.showcasecontent}>
                     <div className={classes.container}>
                     </div>
-
                 </div>
                 <div class="position-absolute bottom-0 left-0">
                     <OverlayTrigger
@@ -42,18 +41,32 @@ class LowerChattaPage extends Component{
                 </div>
             </header>
             <div className={classes.text}>
-            <h2>Welcome to the Water Wars!</h2>
-            <p>
+            <div className={classes.info}>
+                        <Row>
+                            <Col md="auto"><h2 className = {classes.h2}>Welcome to the Water Wars!</h2></Col>
+            <Col></Col>
+                        </Row>
+                        <Row>
+                            <Col md="8">
+                        <p className={classes.pL}>
                 The ACF originates northeast of Lake Lanier and cuts across southwest Georgia farmland, 
                 flowing along the Alabama border into the Gulf of Mexico through Florida’s Panhandle.
             </p>
-            <br/>
-            <p>
+            </Col>
+                        <Col></Col>
+                        </Row>
+                        <br />
+                        <Row>
+                            <Col></Col>
+                            <Col md="8">
+                        <p className={classes.pR}>
                 The basin serves as the main source of drinking water to more than 4 million people in
                 metro Atlanta, including roughly 70%. of the region’s population. It also supports a 
                 broad swath of industries, including agriculture, power generation, manufacturing, 
                 commercial fishing and recreation.
             </p>
+            </Col>
+                        </Row>
             <br/>
             <div className={classes.states}>
             <p>
@@ -139,6 +152,7 @@ class LowerChattaPage extends Component{
                 shellfish industry, which is under severe ecological stress resulting from low river flows and 
                 saltwater intrusion.
             </p>
+            </div>
             </div>
             <br></br>
             
