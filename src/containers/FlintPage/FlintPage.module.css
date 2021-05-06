@@ -53,7 +53,8 @@
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
   position: absolute;
-  bottom:65px;
+  bottom:105px;
+  z-index: 10;
 }
 .chevron:hover {
   border-bottom-width: 7px;

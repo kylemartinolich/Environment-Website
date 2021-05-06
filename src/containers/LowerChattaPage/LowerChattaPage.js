@@ -37,6 +37,7 @@ constructor(props) {
             <Row>
              <Jumbotron className={classes.jumbo} fluid>
                     <div>
+                        <div className={classes.chevronContainer}><i onClick={() =>window.scrollTo(100,750)}className={classes.chevron}></i></div>
                          <img src={jumbopic} width={windowWidth} imgWidth={1920}/>
                     </div>
                 </Jumbotron>

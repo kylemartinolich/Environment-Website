@@ -9,7 +9,7 @@
   .map {
     width:80%;
     height:100%;
-  }
+    }
   .btn {
     color: #00ffff;
     text-decoration: none;
@@ -19,12 +19,36 @@
     font-weight: bold;
     width:80%;
     padding: 0 !important;
-}
+    }
 .showcasecontent .btn {
     font-size: 1.5rem;
     padding: 1rem !important;
     transition: color 0.5s,  background 0.5s;
+    }
 }
+
+.chevron {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: #fffffff1;
+  border-width: 0px 5px 5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  position:absolute;
+  bottom:125px;
+  z-index: 10;
+}
+.chevron:hover {
+  border-bottom-width: 7px;
+  border-right-width: 7px;
+}
+.chevronContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .showcase {
