@@ -39,7 +39,9 @@ const animalButton = (props) => (<div>
                     </p>
                 </Col>
                 <Col>
-                    <Image src={apaPics[props.piclink]} rounded />
+                    <p>
+                    {props.piclink}
+                    </p>
                 </Col>
             </Row>
       </Modal.Body>
