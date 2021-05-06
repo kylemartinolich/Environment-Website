@@ -1,8 +1,9 @@
-.header{
-    background-color: #4C6E91;
-    color: #FFF;
-}
 .body{
     background: no-repeat center center/cover;
+    color: #FFF;
+}
+
+.header{
+    background-color: #4C6E91;
     color: #FFF;
 }

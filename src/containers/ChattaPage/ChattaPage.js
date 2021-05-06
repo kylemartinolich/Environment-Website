@@ -82,38 +82,37 @@ class ChattaPage extends Component{
                         </Row>
                         <Row>
                             <Col md="8">
-                        <p className={classes.pL}>
-                The Chattahoochee River begins its journey south on the southern edge of the Blue Ridge mountains,
-                just below Brasstown Bald, Georgia’s highest point at 4,784 feet.  The word Chattahoochee is derived
-                from the Creek Indian words meaning painted rock.  From its birthplace at Coon Den Ridge in Union
-                County, Georgia, the river flows south for 430 miles to its confluence with the Flint River.
-                The Chattahoochee basin drains an area of 8,770 square miles and is the most heavily used
-                water resource in Georgia.
-            </p>
-            </Col>
-                        <Col></Col>
+                                <p className={classes.pL}>
+                                    The Chattahoochee River begins its journey south on the southern edge of the Blue Ridge mountains,
+                                    just below Brasstown Bald, Georgia’s highest point at 4,784 feet.  The word Chattahoochee is derived
+                                    from the Creek Indian words meaning painted rock.  From its birthplace at Coon Den Ridge in Union
+                                    County, Georgia, the river flows south for 430 miles to its confluence with the Flint River.
+                                    The Chattahoochee basin drains an area of 8,770 square miles and is the most heavily used
+                                    water resource in Georgia.
+                                </p>
+                            </Col>
+                            <Col></Col>
                         </Row>
                         <br />
                         <Row>
                             <Col></Col>
                             <Col md="8">
-                        <p className={classes.pR}>
-                The Chattahoochee River Basin is inhabited by about 24 species of freshwater aquatic turtles,
-                about 37 species of salamanders and sirens, about 30 species of frogs and toads, and the American
-                alligator. The river is home to 9 state threatened or endangered plant species.
-            </p>
-            </Col>
+                                <p className={classes.pR}>
+                                    The Chattahoochee River Basin is inhabited by about 24 species of freshwater aquatic turtles,
+                                    about 37 species of salamanders and sirens, about 30 species of frogs and toads, and the American
+                                    alligator. The river is home to 9 state threatened or endangered plant species.
+                                </p>
+                            </Col>
                         </Row>
                         <br />
                          <Row>
                             <Col md="8">
-                        <p className={classes.pL}>
-                The Chattahoochee River is the second southern-most trout habitat in the United States 
-                (other: Guadalupe River, Texas) and is also one of only two trout streams in North America 
-                that flow through a major urban area (other: Bow River, Canada).
-            
-            </p>
-                        </Col>
+                                <p className={classes.pL}>
+                                The Chattahoochee River is the second southern-most trout habitat in the United States 
+                                (other: Guadalupe River, Texas) and is also one of only two trout streams in North America 
+                                that flow through a major urban area (other: Bow River, Canada).     
+                                </p>
+                            </Col>
                         <Col></Col>
                         </Row>
                         </div>

@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
+.border{
+    border-top: none;
+    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
+}
+
+.heading{
+    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
+    border-bottom: 3px solid #3fbcef;
+}
+
+.p{
+    background-image: url("../../assets/Miscellaneous/leftpattern.jpg"),url("../../assets/Miscellaneous/white-waves.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
+    background-position: left top, center top, right top;
+    background-repeat: repeat-y, repeat-y, repeat-y;
+    background-color: white;
+    margin:auto;
+}
+
 .text{
      font-size: large;
     font-family: "Heebo", "Arvo", Helvetica, Montserrat,"Times New Roman", Times, serif;
     margin-bottom:0px;
     color:black;
-}
-.heading{
-    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
-    border-bottom: 3px solid #3fbcef;
-}
-.border{
-    border-top: none;
-    background-image:  url("../../assets/Miscellaneous/wavebreaker.jpg");
-}
-.p{
-     background-image: url("../../assets/Miscellaneous/leftpattern.jpg"),url("../../assets/Miscellaneous/white-waves.jpg"), url("../../assets/Miscellaneous/rightpattern.jpg") ;
-    background-position: left top, center top, right top;
-    background-repeat: repeat-y, repeat-y, repeat-y;
-    background-color: white;
-    margin:auto;
 }

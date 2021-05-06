@@ -1,37 +1,60 @@
-.Footer{
-    background: #3fbcef;
-    width: 100%;
-    position: relative;
-}
-.h2{
-    color: #3fbcef;
-    background: black;
-}
-.name{
+.copyrightRow{
     display: inline-block;
+    text-align: center;
+}
+
+.email{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.emailColumn{
+    display: inline-block;
+    text-align: center;
     width: 100%;
 }
+
 .firstName{
     display: inline-block;
     width: 100%;
     text-align: center;
 }
+
+.Footer{
+    background: #3fbcef;
+    width: 100%;
+    position: relative;
+}
+
+.h2{
+    color: #3fbcef;
+    background: black;
+}
+
+.iconDiv{
+    width:100%;
+    text-align-last: center;
+    
+}
+
+.icons{
+    padding-top: 15px;
+    text-align-last: center;
+}
+
+.iconRow{
+    text-align: center;
+    display: inline-block;
+}
+
 .lastName{
     display: inline-block;
     margin: 0%;
     width: 100%;
     text-align: center;
 }
-.email{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.emailColumn{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
+
 .message{
     width:100%;
 }
@@ -40,26 +63,15 @@
     text-align: center;
     width: 100%;
 }
+
+.name{
+    display: inline-block;
+    width: 100%;
+}
+
 .submit{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
     display: inline-block;
-}
-.iconDiv{
-    width:100%;
-    text-align-last: center;
-    
-}
-.icons{
-    padding-top: 15px;
-    text-align-last: center;
-}
-.iconRow{
-    text-align: center;
-    display: inline-block;
-}
-.copyrightRow{
-    display: inline-block;
-    text-align: center;
 }
