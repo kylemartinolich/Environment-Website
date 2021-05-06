@@ -1,3 +1,47 @@
+# Environment Website
+This repo is the backend of the Environment website, found at https://environment-website.herokuapp.com/
+
+## Purpose:
+The purpose of this website is to give information about the rivers in the ACF, including their history, endangered species, and the ongoing Water Wars debates.
+
+## Dependencies:
+* Body-parser
+* Bootstrap
+* Emailjs-com
+* Express
+* Jquery
+* Node
+* Node-fetch
+* Nodemailer
+* React
+* React-Bootstrap
+* React-dom
+* React-Image-Mapper
+* React-rotating-text
+* React-scripts
+* Web-vitals
+
+## How to run:
+### Step 1: Clone project to local repo
+```
+git clone https://github.com/kylemartinolich/Environment-Website
+cd environment-website
+```
+### Step 2: Install npm dependencies
+```
+npm install
+```
+### Step 3: Start the site
+```
+npm start
+```
+## Credits
+This website was created and designed by:
+* Joshua Lopez-Zamudio
+* Kody Martinolich
+* Kyle Martinolich.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

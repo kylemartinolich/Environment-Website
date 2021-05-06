@@ -12,24 +12,36 @@ const footer = (props) => (
     <div className={classes.Footer}>
         <h2 className ={classes.h2}><strong>Find out more!</strong></h2>
 <Form onSubmit={sendEmail}>
-  <Form.Row className="justify-content-md-center">
-    <Col sm={2}>
+  <Form.Row>
+      <div className={classes.name}>
+    <Col sm={2} className={classes.firstName}>
       <Form.Control placeholder="First name" name="first_name" />
     </Col>
-    <Col sm={2}>
+    <Col sm={2} className={classes.lastName}>
       <Form.Control placeholder="Last name" name="last_name" />
     </Col>
-    <Col sm={4}>
+    </div>
+    <div className={classes.email}>
+    <Col sm={4} className={classes.emailColumn}>
         <Form.Control type="email" placeholder="Enter email" name="email" />
     </Col>
+    </div>
+    <div className={classes.message}>
+    <Col sm={4} className={classes.messageColumn}>
+        <Form.Control as="textarea" rows={3} type="description" placeholder="Message (Optional)" name="description" />
+    </Col>
+    </div>
+    <div className={classes.submit}>
     <Button variant="primary" type="submit">
     Submit
   </Button>
+  </div>
   </Form.Row>
 </Form>
-<div>
+<div >
+    <div className={classes.iconDiv}>
     <Container className ={classes.icons} >
-    <Row className = "justify-content-md-center">
+    <Row className ={classes.iconRow}>
     <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" x="0" y="0" height="125" width="125" fill="black" class="bi bi-facebook" viewBox="0 0 30 50">
         <a href="#"><rect fill="#3fbcef" width="16" height="16"/>
         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -51,10 +63,11 @@ const footer = (props) => (
     </svg>
     </Row>
     </Container>
-    <Row className = "justify-content-md-center">
-        <span>
+    </div>
+    <Row className = {classes.copyrightRow}>
+        <div>
             © 2021
-        </span>
+        </div>
     </Row>
 </div>
     </div>
